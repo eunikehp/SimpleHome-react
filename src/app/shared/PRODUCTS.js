@@ -14,6 +14,7 @@ export const PRODUCTS = [
         price: 99,
         category: 'Dining Table',
         stockCount: 4,
+        mostBuy: true,
         description: 'A durable dining table that makes it easy to have big dinners. A single person can extend the table and there’s plenty of room for chairs since the legs are always located at the corners of the table.'
 
     },
@@ -24,6 +25,7 @@ export const PRODUCTS = [
         price: 149,
         category: 'Dining Table',
         stockCount: 5,
+        mostBuy: false,
         description:'The simple design of this dining table will blend seamlessly into your dining area. And the smooth and simple extension lets you extend your dinner invitation without worrying about fitting everyone in.'
           
     },
@@ -34,6 +36,7 @@ export const PRODUCTS = [
         price: 1049,
         category: 'Sofa',
         stockCount: 2,
+        mostBuy: false,
         description:'The sofa has sections that can be combined as you like into a customised solution for you and your home – and as your life changes, you can complete the sofa and let it change with you.'
     },
     {
@@ -43,6 +46,7 @@ export const PRODUCTS = [
         price: 1199,
         category: 'Bed',
         stockCount: 1,
+        mostBuy: true,
         description:'A complete bed designed to be comfortable both for sleeping and reading. It provides nice support where needed, has a soft feel where possible – and is smartly packaged, making it easy to transport.'
     },
     {
@@ -52,6 +56,7 @@ export const PRODUCTS = [
         price: 499,
         category: 'Sofa',
         stockCount: 6,
+        mostBuy: false,
         description: 'Warm and welcoming, neat and stylish. The supporting seat cushions, the cover’s soft finish and the tight fit gives this sofa a perfect balance between its comfort, functions and look.'
     },
     {
@@ -61,6 +66,7 @@ export const PRODUCTS = [
         price: 399,
         category: 'Sofa',
         stockCount: 10,
+        mostBuy: true,
         description: 'A slender and robust sofa inspired by 1950s Scandinavian design. Tall legs in solid wood and an angled frame enhance the retro vibe, as does the stained finish with a visible, natural grain pattern.'
     },
     {
@@ -70,6 +76,7 @@ export const PRODUCTS = [
         price: 849,
         category: 'Bed',
         stockCount: 5,
+        mostBuy: true,
         description: 'A classic continental bed with a soft headboard, fully upholstered – perfect for placing in the centre of the room. And in case of accidents, the cover can be removed and machine washed.'
     }
 ];

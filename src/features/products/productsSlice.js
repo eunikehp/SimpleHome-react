@@ -9,5 +9,5 @@ export const selectAllProducts = () => {
 // };
 
 export const selectProductById = (id) => {
-    return PRODUCTS.find((product) => product.id === id )
+    return PRODUCTS.find((product) => product.id === parseInt(id)) // convert id from string to integer
 }
