@@ -23,7 +23,7 @@ h3,
 
 
 h2 {
-    color: #3046c5;
+    color: #463F3A;
 }
 
 .row-content {
@@ -36,6 +36,16 @@ h2 {
     background-color: #F4F3EE;
     padding: 20px 0;
     margin-top: 2rem;
+}
+
+.site-footer a { 
+    color: black;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .navbar-brand {
@@ -54,7 +64,9 @@ h2 {
     background-color: #F4F3EE;
     margin-bottom: 2rem;
     min-height: 5rem;
+    color: #463F3A;
 }
+
 
 .page-enter {
     opacity: 0;

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -64,19 +64,16 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col sm='3' className='text-center'>
-                        <ul className='list-unstyled text-center'>Home
-                            {/* <li>
+                        <ul className='list-unstyled text-center'>
+                            <li>
                                 <Link to='/'>Home</Link>
                             </li>
                             <li>
-                                <Link to='/about'>About</Link>
-                            </li>
-                            <li>
-                                <Link to='/catalog'>Catalog</Link>
+                                <Link to='/shop'>Shop</Link>
                             </li>
                             <li>
                                 <Link to='/contact'>Contact</Link>
-                            </li> */}
+                            </li>
                         </ul>
                     </Col>
                     <div className='text-center'>2024 Simple Home. Site by Eunike Hedriani Pardede</div>
