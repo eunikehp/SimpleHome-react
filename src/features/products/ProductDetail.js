@@ -4,9 +4,9 @@ const ProductDetail = ({ product }) => {
     const { image, price, name, description, category } = product;
     
     return (
-        <Col md='12' className='m-4'>
+        <Col md='5' className='m-1'>
             <Card>
-                <CardImg top src={image} alt={name} style={{ width: '50%'}} />
+                <CardImg top src={image} alt={name} style={{ width: '100%'}} />
                 <CardBody>
                     <CardText style={{ fontSize: '13px', marginBottom: '0px', color: 'brown' }}>{category}</CardText>
                     <CardTitle>{name}</CardTitle>

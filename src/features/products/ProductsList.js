@@ -11,8 +11,7 @@ const ProductsList = () => {
             {products.map((product) => {
                 return (
                     <Col 
-                        md='2' 
-                        className="m-1" 
+                        md='3'  
                         key={product.id}
                         // onClick={() => setProductId(product.id)}
                     >
