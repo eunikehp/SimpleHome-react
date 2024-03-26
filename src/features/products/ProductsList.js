@@ -4,6 +4,7 @@ import { selectAllProducts } from "./productsSlice";
 
 const ProductsList = () => {
     const products = selectAllProducts();
+    
     return (
         <Row className="ms-auto">
             {products.map((product) => {
@@ -11,10 +12,10 @@ const ProductsList = () => {
                     <Col md='2' className="m-1" key={product.id}>
                         <ProductCard product={product}/>
                     </Col>
-                )
+                );
             })}
         </Row>
-    )
-}
+    );
+};
 
 export default ProductsList;

@@ -5,5 +5,5 @@ export const selectAllProducts = () => {
 };
 
 export const selectRandomProduct = () => {
-    return PRODUCTS[Math.floor(Math.random() * PRODUCTS.length)]
-}
+    return PRODUCTS[Math.floor(PRODUCTS.length * Math.random())];
+};

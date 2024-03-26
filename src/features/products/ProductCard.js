@@ -1,7 +1,7 @@
-import { Card, CardImg, CardTitle, CardSubtitle, CardBody, Button} from 'reactstrap';
+import { Card, CardImg, CardTitle, CardSubtitle, CardBody, Button, CardText} from 'reactstrap';
 
 const ProductCard = ({ product }) => {
-    const { image, name, price } = product;
+    const { image, name, price, category } = product;
     return (
         <Card>
             <CardImg
@@ -11,6 +11,7 @@ const ProductCard = ({ product }) => {
                 alt={name}
             />
             <CardBody>
+                <CardText style={{fontSize: '13px', marginBottom: '0px', color:'brown'}}>{category}</CardText>
                 <CardTitle>{name}</CardTitle>
                 <CardSubtitle 
                     className='mb-2 text-muted'
