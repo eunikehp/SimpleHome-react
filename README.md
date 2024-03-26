@@ -20,6 +20,7 @@ This website is a continuation of previous Javascript project and is converted i
 8. [Redux-logger](https://www.npmjs.com/package/redux-logger)
 9. [Typeface-lobster](https://www.npmjs.com/package/typeface-lobster)
 10. [Typeface-open-sans](https://www.npmjs.com/package/typeface-open-sans)
+11. [Typeface-roboto](https://www.npmjs.com/package/typeface-roboto)
 
 ### Libraries
 
