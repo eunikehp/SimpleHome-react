@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SubHeader = ({ current, detail }) => {
     return (
         <Row>
-            <Col>
+            <Col className='ms-5'>
                 <Breadcrumb>
                     <BreadcrumbItem>
                         <Link to='/'>Home</Link>
@@ -17,8 +17,8 @@ const SubHeader = ({ current, detail }) => {
                     )}
                     <BreadcrumbItem active>{current}</BreadcrumbItem>
                 </Breadcrumb>
-                <h2>{current}</h2>
-                <hr/>
+                {/* <h2>{current}</h2>
+                <hr/> */}
             </Col>
         </Row>
     )

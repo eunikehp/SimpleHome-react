@@ -1,22 +1,15 @@
-// import { useState } from 'react';
 import { Container, Row } from 'reactstrap';
 import ProductsList from '../features/products/ProductsList';
-// import ProductDetail from '../features/products/ProductDetail';
-// import { selectProductById } from '../features/products/productsSlice';
+import SubHeader from '../components/SubHeader';
 
 const ShopPage = () => {
-    // const [productId, setProductId] = useState(0);
-    // const selectedProduct = selectProductById(productId);
 
     return (
         <Container>
+            <SubHeader current='Shop'/>
             <Row >
-                {/* <ProductsList setProductId = {setProductId}/>  */}
                 <ProductsList /> 
             </Row>
-            {/* <Row>
-                <ProductDetail product={selectedProduct} />
-            </Row> */}
         </Container>
 
     );

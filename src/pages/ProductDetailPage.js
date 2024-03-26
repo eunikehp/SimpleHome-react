@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { selectProductById } from '../features/products/productsSlice';
 import ProductDetail from '../features/products/ProductDetail';
 import ReviewsList from '../features/reviews/ReviewsList';
+import SubHeader from '../components/SubHeader';
 
 const ProductDetailPage = () => {
     const { productId } = useParams(); //useParams() will always parse URL parameters as strings. 
@@ -10,6 +11,7 @@ const ProductDetailPage = () => {
 
     return (
         <Container>
+            <SubHeader current={selectedProduct.name} detail={true} />
             <Row>
                 <ProductDetail product={selectedProduct}/>
                 <ReviewsList productId={productId}/>

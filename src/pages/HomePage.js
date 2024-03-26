@@ -4,7 +4,7 @@ import SubHeader from '../components/SubHeader';
 const HomePage = () => {
     return (
         <div>
-            <SubHeader/>
+            <SubHeader current='Home'/>
             <img 
                 width='100%'
                 src={Cover} 
