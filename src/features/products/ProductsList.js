@@ -2,14 +2,18 @@ import ProductCard from "./ProductCard";
 import { Col, Row } from 'reactstrap';
 import { selectAllProducts } from "./productsSlice";
 
-const ProductsList = () => {
+const ProductsList = ({ setProductId }) => {
     const products = selectAllProducts();
     
     return (
         <Row className="ms-auto">
             {products.map((product) => {
                 return (
-                    <Col md='2' className="m-1" key={product.id}>
+                    <Col 
+                        md='2' 
+                        className="m-1" 
+                        key={product.id}
+                        onClick={() => setProductId(product.id)}>
                         <ProductCard product={product}/>
                     </Col>
                 );
