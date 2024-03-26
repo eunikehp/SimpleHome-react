@@ -1,3 +1,44 @@
+# Simple Home
+
+## Description
+
+Simple Home is a furniture store that sold products not only on their store but also through their website. In the website, customers can view all items that are available and then order them by adding or removing from their carts. Some of their products are tables, wardrobes, kitchen cabinets, sofas, carpets, etc. 
+
+Simple Home is a dynamic web app. It features a Home page, About page, Products page, Contact Page, and Login Page. The website is created by using React and Redux library that handles application state management. To create it a single page website, React Router library is used. 
+
+This website is a continuation of previous Javascript project and is converted into React version. This project is for portfolio project - React at Nucamp Web and Mobile App Development.
+
+## Dependencies
+
+1. [Bootstrap](https://www.npmjs.com/package/bootstrap)
+2. [Bootstrap-social](https://www.npmjs.com/package/bootstrap-social)
+3. [Font-awesome](https://www.npmjs.com/package/font-awesome)
+4. [Formik](https://www.npmjs.com/package/formik)
+5. [React-router-dom](https://www.npmjs.com/package/react-router-dom)
+6. [React-spring](https://www.npmjs.com/package/react-spring)
+7. [Reactstrap](https://www.npmjs.com/package/reactstrap)
+8. [Redux-logger](https://www.npmjs.com/package/redux-logger)
+9. [Typeface-lobster](https://www.npmjs.com/package/typeface-lobster)
+10. [Typeface-open-sans](https://www.npmjs.com/package/typeface-open-sans)
+
+### Libraries
+
+1. React Router
+React Router is a third party (yet de facto standard) library in the open-source React ecosystem that handles routing to different views from within a React application.
+
+
+## Launch
+
+Consider also using additional elements such as: 
+
+Table of contents
+Illustrations
+Scope of functionalities 
+Examples of use
+Project status 
+Sources
+Other information
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
