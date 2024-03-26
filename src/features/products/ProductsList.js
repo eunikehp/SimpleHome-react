@@ -1,13 +1,14 @@
 import ProductCard from "./ProductCard";
-import { PRODUCTS } from "../../app/shared/PRODUCTS";
 import { Col, Row } from 'reactstrap';
+import { selectAllProducts } from "./productsSlice";
 
 const ProductsList = () => {
+    const products = selectAllProducts();
     return (
         <Row className="ms-auto">
-            {PRODUCTS.map((product) => {
+            {products.map((product) => {
                 return (
-                    <Col md='3' className="m-1" key={product.id}>
+                    <Col md='2' className="m-1" key={product.id}>
                         <ProductCard product={product}/>
                     </Col>
                 )
