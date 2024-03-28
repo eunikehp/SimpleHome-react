@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
-                <Row>
-                    <Col xs='6' sm='5' lg={{size:3, offset: 1}}>
+                <Row xs='2' sm='2' md='3'>
+                    <Col >
                         <h6>Location</h6>
                         <p>
                             Bronkhorststraat 30
@@ -20,7 +20,7 @@ const Footer = () => {
                             Sunday 12.00-18.00
                         </p>
                     </Col>
-                    <Col xs='6' sm='4' className='text-center'>
+                    <Col className='text-center'>
                         <h6 className= 'mb-0'>Contact us:</h6>
                         <a
                             role='button'
@@ -62,7 +62,7 @@ const Footer = () => {
                             <i className='fa fa-youtube' />
                         </a>
                     </Col>
-                    <Col sm='3' className='text-center'>
+                    <Col xs='12' sm='12' className='text-center'>
                         <List type='unstyled' className='text-center'>
                             <li>
                                 <Link to='/'>Home</Link>
@@ -75,8 +75,8 @@ const Footer = () => {
                             </li>
                         </List>
                     </Col>
-                    <p className='text-center'>2024 Simple Home. Site by Eunike Hedriani Pardede</p>
                 </Row>
+                <p className='text-center'>2024 Simple Home. Site by Eunike Hedriani Pardede</p>
             </Container>
         </footer>
     )

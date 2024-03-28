@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
                     src={image}
                     alt={name}
                 />
-                <CardBody>
+                <CardBody type='unstyled'>
                     <CardText style={{ fontSize: '13px', marginBottom: '0px', color: 'brown' }}>{category}</CardText>
                     <CardTitle>{name}</CardTitle>
                     <CardSubtitle

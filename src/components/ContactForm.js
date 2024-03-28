@@ -81,7 +81,7 @@ const ContactForm = () => {
                 </FormGroup>
                 <FormGroup>
                     <Col>
-                        <Button type='submit'>Submit</Button>
+                        <Button active type='submit'>Submit</Button>
                     </Col>
                 </FormGroup>
             </Form>
