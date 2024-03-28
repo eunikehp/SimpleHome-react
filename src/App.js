@@ -6,6 +6,10 @@ import ShopPage from './pages/ShopPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -24,3 +28,4 @@ function App() {
 }
 
 export default App;
+library.add(fab, fas, far)

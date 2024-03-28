@@ -1,5 +1,6 @@
 import { Card, CardImg, CardTitle, CardSubtitle, CardBody, Button, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProductCard = ({ product }) => {
     const { id, image, name, price, category } = product;
@@ -18,7 +19,9 @@ const ProductCard = ({ product }) => {
                     <CardSubtitle
                         className='mb-2 text-muted'
                     >€ {price}</CardSubtitle>
-                    <Button href='#' size='sm'x style={{backgroundColor:'gray', border:'none'}}>+</Button>
+                    <Button href='#' size='sm' style={{backgroundColor:'gray', border:'none'}}>
+                        <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-cart-plus" />
+                    </Button>
                 </CardBody>
             </Card>
         </Link>

@@ -5,7 +5,7 @@ import { validateReviewForm } from "../../utils/validateReviewForm";
 
 
 const ReviewForm = ({ productId }) => {
-    const [modalOpen, setModalOpen] = useState(false);
+    const [canvasOpen, setCanvasOpen] = useState(false);
 
     const handleSubmit = (values,{resetForm}) => {
         const review = {
@@ -15,17 +15,17 @@ const ReviewForm = ({ productId }) => {
             text: values.reviewText
         };
         console.log(review);
-        setModalOpen(false);
+        setCanvasOpen(false);
         resetForm();
     };
 
     return (
         <>
-            <Button outline onClick={() => setModalOpen(true)}>
+            <Button outline onClick={() => setCanvasOpen(true)}>
                 Write a review
             </Button>
-            <Offcanvas isOpen={modalOpen} direction='end' style={{ padding: '12px 15px' }}>
-                <OffcanvasHeader className='my-3' toggle={() => setModalOpen(false)}>Please write a review</OffcanvasHeader>
+            <Offcanvas isOpen={canvasOpen} direction='end' style={{ padding: '12px 15px' }}>
+                <OffcanvasHeader className='my-3' toggle={() => setCanvasOpen(false)}>Please write a review</OffcanvasHeader>
                 <Formik
                     initialValues={{
                         rating: undefined,

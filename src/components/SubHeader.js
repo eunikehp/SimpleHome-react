@@ -6,16 +6,16 @@ const SubHeader = ({ current, detail }) => {
     return (
         <Row>
             <Col>
-                <Breadcrumb>
+                <Breadcrumb >
                     <BreadcrumbItem>
-                        <Link to='/'>Home</Link>
+                        <Link to='/' style={{ textDecoration: 'none', color:'gray' }} >Home</Link>
                     </BreadcrumbItem>
                     {detail && (
                         <BreadcrumbItem>
-                            <Link to='/shop'>Shop</Link>
+                            <Link to='/shop' style={{ textDecoration: 'none', color:'gray' }}>Shop</Link>
                         </BreadcrumbItem>
                     )}
-                    <BreadcrumbItem active>{current}</BreadcrumbItem>
+                    <BreadcrumbItem active style={{ color: 'black'}}>{current}</BreadcrumbItem>
                 </Breadcrumb>
                 {/* <h2>{current}</h2>
                 <hr/> */}
