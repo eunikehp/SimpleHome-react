@@ -2,7 +2,7 @@
 
 ## Description
 
-Simple Home is a furniture store that sold products not only on their store but also through their website. In the website, customers can view all items that are available and then order them by adding or removing from their carts. Some of their products are tables, wardrobes, kitchen cabinets, sofas, carpets, etc. 
+Simple Home is a fictional furniture store that sold products not only on their store but also through their website. In the website, customers can view all items that are available and then order them by adding or removing from their carts. Some of their products are dining tables, wardrobes, kitchen cabinets, sofas, beds, etc. 
 
 Simple Home is a dynamic web app. It features a Home page, About page, Products page, Contact Page, and Login Page. The website is created by using React and Redux library that handles application state management. To create it a single page website, React Router library is used. 
 
@@ -24,7 +24,7 @@ This website is a continuation of previous Javascript project and is converted i
 ### Libraries
 
 1. React Router
-React Router is a third party (yet de facto standard) library in the open-source React ecosystem that handles routing to different views from within a React application.
+React Router is a third party library in the open-source React ecosystem that handles routing to different views from within a React application.
 
 
 ## Launch

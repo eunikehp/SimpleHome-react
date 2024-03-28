@@ -14,7 +14,7 @@ const Header = () => {
   const [ menuOpen, setMenuOpen ] = useState(false);
 
   return (
-    <Navbar sticky='top' expand='md'>
+    <Navbar light sticky='top' expand='md'>
       <NavbarBrand href='/' className='ms-5'>
         <img src={SimpleHomeLogo} alt='simplehome logo' />
       </NavbarBrand>

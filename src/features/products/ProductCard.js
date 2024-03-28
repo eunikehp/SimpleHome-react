@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
                     <CardSubtitle
                         className='mb-2 text-muted'
                     >€ {price}</CardSubtitle>
-                    <Button href='#' >+</Button>
+                    <Button href='#' size='sm'x style={{backgroundColor:'gray', border:'none'}}>+</Button>
                 </CardBody>
             </Card>
         </Link>

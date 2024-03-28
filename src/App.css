@@ -10,6 +10,13 @@ h3,
 }
 
 .card-img {
+
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+    text-decoration: none;
 }
 
 .card-title {
@@ -27,11 +34,11 @@ h2 {
     color: #463F3A;
 }
 
-.row-content {
+/* .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
-}
+} */
 
 .site-footer {
     background-color: #F4F3EE;
@@ -67,7 +74,6 @@ h2 {
     min-height: 5rem;
     color: #463F3A;
 }
-
 
 .page-enter {
     opacity: 0;

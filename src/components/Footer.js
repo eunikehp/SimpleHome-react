@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, List } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -63,7 +63,7 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col sm='3' className='text-center'>
-                        <ul className='list-unstyled text-center'>
+                        <List type='unstyled' className='text-center'>
                             <li>
                                 <Link to='/'>Home</Link>
                             </li>
@@ -73,7 +73,7 @@ const Footer = () => {
                             <li>
                                 <Link to='/contact'>Contact</Link>
                             </li>
-                        </ul>
+                        </List>
                     </Col>
                     <p className='text-center'>2024 Simple Home. Site by Eunike Hedriani Pardede</p>
                 </Row>
