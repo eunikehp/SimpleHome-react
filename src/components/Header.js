@@ -51,6 +51,14 @@ const Header = () => {
               onClick={() => setMenuOpen(false)}
             >Contact</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink
+              className='nav-link'
+              style={{ color: 'black' }}
+              to='/faq'
+              onClick={() => setMenuOpen(false)}
+            >FAQ</NavLink>
+          </NavItem>
         </Nav>
       </Offcanvas>
       <Nav className='align-items-center'>

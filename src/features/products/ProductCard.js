@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ProductCard = ({ product }) => {
     const { id, image, name, price, category } = product;
     return (
-        <Link to={`${id}`}>
-            <Card>
+        <Link to={`${id}`} style={{textDecoration: 'none'}}>
+            <Card color="light" outline>
                 <CardImg
                     width='100%'
                     height='auto'
@@ -15,13 +15,13 @@ const ProductCard = ({ product }) => {
                 />
                 <CardBody type='unstyled'>
                     <CardText style={{ fontSize: '13px', marginBottom: '0px', color: 'brown' }}>{category}</CardText>
-                    <CardTitle>{name}</CardTitle>
+                    <CardTitle style={{ color: 'black'}}>{name}</CardTitle>
                     <CardSubtitle
                         className='mb-2 text-muted'
                     >€ {price}</CardSubtitle>
-                    <Button href='#' size='sm' style={{backgroundColor:'gray', border:'none'}}>
+                    {/* <Button href='#' size='sm' style={{backgroundColor:'gray', border:'none'}}>
                         <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-cart-plus" />
-                    </Button>
+                    </Button> */}
                 </CardBody>
             </Card>
         </Link>

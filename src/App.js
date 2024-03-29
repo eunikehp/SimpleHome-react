@@ -6,6 +6,7 @@ import ShopPage from './pages/ShopPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import FAQPage from './pages/FAQPage';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -21,6 +22,7 @@ function App() {
           <Route path='shop' element={<ShopPage />} />
           <Route path='shop/:productId' element={<ProductDetailPage />} />
           <Route path='contact' element={<ContactPage/>} />
+          <Route path='faq' element={<FAQPage/>} />
         </Routes>
         <Footer />
     </div>

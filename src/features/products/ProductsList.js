@@ -11,7 +11,8 @@ const ProductsList = () => {
                 {products.map((product) => {
                     return (
                         <Col
-                            md='3'
+                            md='2'
+                            className="m-1"
                             key={product.id}
                         >
                             <ProductCard product={product} />

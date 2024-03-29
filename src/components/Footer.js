@@ -1,5 +1,6 @@
 import { Container, Row, Col, List } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
                         </p>
                     </Col>
                     <Col className='text-center'>
-                        <h6 className= 'mb-0'>Contact us:</h6>
+                        <h6 className='mb-0'>Contact us:</h6>
                         <a
                             role='button'
                             className='btn btn-link btn-sm'
@@ -36,30 +37,23 @@ const Footer = () => {
                         >
                             <i className='fa fa-envelope-o' /> hello@simplehome.nl
                         </a>
-                        <h6 className= 'mt-3 mb-1'>Follow us:</h6>
-                        <a
-                            className='btn btn-social-icon btn-instagram btn-xs'
-                            href='http://instagram.com/'
-                        >
-                            <i className='fa fa-instagram' />
+                        
+                        <h6 className='mt-3 mb-2'>Follow us:</h6>
+                        <a href='http://instagram.com/'
+                            className="instagram social">
+                            <FontAwesomeIcon icon='fa-brands fa-instagram' size='2x'/>
                         </a>{' '}
-                        <a
-                            className='btn btn-social-icon btn-facebook btn-xs'
-                            href='http://www.facebook.com/'
-                        >
-                            <i className='fa fa-facebook' />
+                        <a href='http://facebook.com/'
+                            className="facebook social">
+                            <FontAwesomeIcon icon='fa-brands fa-facebook' size='2x'/>
                         </a>{' '}
-                        <a
-                            className='btn btn-social-icon btn-twitter btn-xs'
-                            href='http://twitter.com/'
-                        >
-                            <i className='fa fa-twitter' />
+                        <a href='http://twitter.com/'
+                            className="twitter social">
+                            <FontAwesomeIcon icon='fa-brands fa-twitter' size='2x'/>
                         </a>{' '}
-                        <a
-                            className='btn btn-social-icon btn-google btn-xs'
-                            href='http://youtube.com/'
-                        >
-                            <i className='fa fa-youtube' />
+                        <a href='http://youtube.com/'
+                            className="youtube social">
+                            <FontAwesomeIcon icon='fa-brands fa-youtube' size='2x'/>
                         </a>
                     </Col>
                     <Col xs='12' sm='12' className='text-center'>
