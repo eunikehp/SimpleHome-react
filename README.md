@@ -1,10 +1,13 @@
 # Simple Home
 
+![Untitled design](https://github.com/eunikehp/SimpleHome-react/assets/104567399/2a510e19-3bb8-45f1-a6cf-b0f07e17d570)
+
+
 ## Description
 
 Simple Home is a fictional furniture store that sold products not only on their store but also through their website. In the website, customers can view all items that are available and then order them by adding or removing from their carts. Some of their products are dining tables, wardrobes, kitchen cabinets, sofas, beds, etc. 
 
-Simple Home is a dynamic web app. It features a Home page, About page, Products page, Contact Page, and Login Page. The website is created by using React and Redux library that handles application state management. To create it a single page website, React Router library is used. 
+Simple Home is a dynamic web app. It features a Home page, Shop page, Contact Page, FAQ page and Login Page. The website is created by using React and Redux library that handles application state management. To create it a single page website, React Router library is used. 
 
 This website is a continuation of previous Javascript project and is converted into React version. This project is for portfolio project - React at Nucamp Web and Mobile App Development.
 
@@ -25,8 +28,10 @@ This website is a continuation of previous Javascript project and is converted i
 
 1. React Router
 React Router is a third party library in the open-source React ecosystem that handles routing to different views from within a React application.
+2. Redux
+Redux is a third party state management library for JavaScript applications such as React.
 
-
+<!--
 ## Launch
 
 Consider also using additional elements such as: 
@@ -85,3 +90,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+-->

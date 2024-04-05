@@ -3,7 +3,7 @@ export const REVIEWS = [
         id: 0,
         productId: 0,
         rating: 5,
-        text: 'The grass was indeed greener here than our last campsite.',
+        text: 'Practical and smart table that is easy to assemble with the good user manual.',
         author: 'Simon Hunt',
         date: '2018-10-25T16:30Z'
     },
@@ -11,7 +11,7 @@ export const REVIEWS = [
         id: 1,
         productId: 0,
         rating: 3,
-        text: 'This lone monkey kept following us back to our tent.',
+        text: 'Nice and small but also nice, if you have more visitors, you can make it small or larger thanks to the extendable system.',
         author: 'Zandra Katherine',
         date: '2017-06-17T03:33Z'
     },
@@ -19,7 +19,7 @@ export const REVIEWS = [
         id: 2,
         productId: 0,
         rating: 4,
-        text: 'Do not feed the wildlife. They will follow you back to the tent.',
+        text: 'It met all my expectations for ease of assembly and easy to pull out to make larger.',
         author: 'Amy Keophilavong',
         date: '2019-02-18T18:12Z'
     },
@@ -27,7 +27,7 @@ export const REVIEWS = [
         id: 3,
         productId: 0,
         rating: 3,
-        text: "Avoid Sundays; couldn't relax and play my flute with all the noisy kids.",
+        text: "A nice and sturdy table. I found it easy to assemble, but I did need some help mounting the table legs (you really need someone to hold them). The table is a compact model (retracted) that fits in small spaces.",
         author: 'Jean Luc',
         date: '2019-08-04T20:11Z'
     },
@@ -35,7 +35,7 @@ export const REVIEWS = [
         id: 4,
         productId: 0,
         rating: 5,
-        text: "This has been our favorite campsite for over 7 years. It is an absolutely beautiful site. The hosts are very friendly and helpful. Don't forget to try out the lake.",
+        text: "Beautiful table, exactly the size I was looking for",
         author: 'R. E. Osariemen',
         date: '2018-07-23T19:44Z'
     },

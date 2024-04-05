@@ -1,4 +1,5 @@
 import { Card, CardImg, CardBody, CardText, Col, CardTitle, CardSubtitle, Button, Row } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProductDetail = ({ product }) => {
     const { image, price, name, description, category, stockCount } = product;
@@ -14,7 +15,15 @@ const ProductDetail = ({ product }) => {
                     <div className='mb-2' style={{ fontSize: '25px' }}>{name}</div>
                     <div className='mb-2 text-muted' style={{ fontSize: '20px' }}>€ {price}</div>
                     <Col>
-                        <Button href='#' block className='mb-4' style={{backgroundColor:'#463F3A', border:'none',padding:'10px 10px'}}>Add to cart</Button>
+                        <Button 
+                            href='#' 
+                            block 
+                            className='mb-4' 
+                            style={{
+                                backgroundColor:'#463F3A', 
+                                border:'none',
+                                padding:'10px 10px'
+                            }}><FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-cart-plus" />Add to cart</Button>
                     </Col>
                     <Col>
                         <Button href='#' block className='mb-4' style={{backgroundColor:'#ac2f8a', border:'none',padding:'10px 10px'}}>♡ Add to my wishlist</Button>

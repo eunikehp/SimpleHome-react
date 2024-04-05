@@ -105,7 +105,7 @@ const UserForm = () => {
                                 </ErrorMessage>
                             </FormGroup>
                             <Button className='mt-4 mb-2' active block type='submit'>Sign In</Button>
-                            <div className='text-center'>New Customer? <span onClick={() => setSignupModal(true)}>Click Here</span></div>
+                            <div className='text-center'>New Customer? <span className='text-decoration-underline' style={{cursor:'pointer'}} onClick={() => setSignupModal(true)}>Click Here</span></div>
                         </Form>
                     </Formik>
                 </ModalBody>

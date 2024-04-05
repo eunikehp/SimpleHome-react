@@ -29,8 +29,6 @@ const ReviewsList = ({ productId }) => {
                     <AccordionItem>
                         <AccordionHeader targetId="1">Customer reviews</AccordionHeader>
                         <AccordionBody accordionId="1">
-                            <strong>Offer on the website</strong>
-                            <br />
                             {reviews.map((review) => {
                                 return <Review key={review.id} review={review} />;
                             })}

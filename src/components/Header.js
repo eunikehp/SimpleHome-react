@@ -62,9 +62,9 @@ const Header = () => {
         </Nav>
       </Offcanvas>
       <Nav className='align-items-center'>
-        <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-cart-shopping" />
-        <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-heart" />
         <UserForm/>
+        <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-heart" />
+        <FontAwesomeIcon className='navbar-icon' icon="fa-solid fa-cart-shopping" />
       </Nav>
     </Navbar>
   )
