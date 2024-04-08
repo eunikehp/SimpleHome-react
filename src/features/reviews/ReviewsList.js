@@ -9,9 +9,10 @@ import {
     AccordionHeader,
     AccordionItem,
 } from 'reactstrap';
+import { useSelector } from "react-redux";
 
 const ReviewsList = ({ productId }) => {
-    const reviews = selectReviewsByProductId(productId);
+    const reviews = useSelector(selectReviewsByProductId(productId));
 
     const [open, setOpen] = useState('');
     const toggle = (id) => {
