@@ -8,10 +8,24 @@ const initialState = {
 
 const reviewsSlice = createSlice({
     name: 'reviews',
-    initialState
+    initialState,
+    reducers: {
+        addReview: (state, action) => {
+            console.log('addReview action.payload: ', action.payload);
+            console.log('addReview state.reviewsArray: ', state.reviewsArray);
+            const newReview = {
+                id: state.reviewsArray.length + 1,
+                ...action.payload
+            }
+            state.reviewsArray.push(newReview);
+        }
+     }
 });
 
 export const reviewsReducer = reviewsSlice.reducer;
+
+//destructure the addReview action creator function from reviewsSlice.action
+export const { addReview } = reviewsSlice.actions;
 
 
 export const selectReviewsByProductId = (productId) => (state) => {

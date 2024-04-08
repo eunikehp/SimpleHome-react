@@ -1,20 +1,28 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Button, Offcanvas, OffcanvasHeader, FormGroup, Label } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateReviewForm } from "../../utils/validateReviewForm";
-
+import { addReview } from "./reviewsSlice";
 
 const ReviewForm = ({ productId }) => {
     const [canvasOpen, setCanvasOpen] = useState(false);
+
+
+    //dispatch / update review
+    const dispatch = useDispatch();
 
     const handleSubmit = (values,{resetForm}) => {
         const review = {
             productId: parseInt(productId),
             rating: values.rating,
             author: values.author,
-            text: values.reviewText
+            text: values.reviewText,
+            date: new Date(Date.now()).toISOString() //dispatch this
         };
-        console.log(review);
+        console.log('review: ', review);
+        //dispatch function and pass an action object(addReview),then pass new review object inside argument list
+        dispatch(addReview(review));
         setCanvasOpen(false);
         resetForm();
     };
