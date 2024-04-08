@@ -16,26 +16,30 @@ import {
 import defaultAvatar from '../../app/assets/img/unicorn.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectCurrentUser, setCurrentUser } from './userSlice';
 
 const UserForm = () => {
     const [signinModal, setSigninModal] = useState(false);
     const [signupModal, setSignupModal] = useState(false);
 
-    let currentUser = '';
+    //redux
+    const currentUser = useSelector(selectCurrentUser);
+    const dispatch = useDispatch();
 
-    const handleSignin = (values, { resetForm }) => {
+    const handleSignin = (values) => {
         const currentUser = {
             id: Date.now(),
-            avatar: { defaultAvatar },
+            avatar: defaultAvatar,
             username: values.username,
             password: values.password
         }
         console.log(currentUser);
+        dispatch(setCurrentUser(currentUser));
         setSigninModal(false);
-        resetForm();
     };
 
-    const handleSignup = (values, { resetForm }) => {
+    const handleSignup = (values) => {
         const newUser = {
             id: Date.now(),
             avatar: { defaultAvatar },
@@ -46,18 +50,17 @@ const UserForm = () => {
         }
         console.log(newUser);
         setSignupModal(false);
-        resetForm();
     };
 
     return (
         <>
             <span className='navbar-text ml-auto'>
                 {currentUser ? (
-                    <div style={{ width: '4rem', height: '4rem' }}>
+                    <div style={{ width: '2rem', height: '2rem', margin:'1rem' }}>
                         <img
                             src={currentUser.avatar}
                             alt='user'
-                            style={{ width: '100%', height: '100%' }}
+                            style={{ width: '100%', height: '100%' , alignItems:'center', justifyContent: 'center'}}
                         />
                     </div>
                 ) : (

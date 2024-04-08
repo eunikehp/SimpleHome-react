@@ -24,6 +24,7 @@ const reviewsSlice = createSlice({
 
 export const reviewsReducer = reviewsSlice.reducer;
 
+//action creator is a function that creates and returns an action object
 //destructure the addReview action creator function from reviewsSlice.action
 export const { addReview } = reviewsSlice.actions;
 

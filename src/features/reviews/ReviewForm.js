@@ -77,12 +77,12 @@ const ReviewForm = ({ productId }) => {
                             </ErrorMessage>
                         </FormGroup>
                         <FormGroup>
-                            <Label htmlFor='review'>
+                            <Label htmlFor='reviewText'>
                                 Review
                             </Label>
                             <Field
                                 className='form-control'
-                                name='review'
+                                name='reviewText'
                                 as='textarea'
                                 rows='3'
                             />
