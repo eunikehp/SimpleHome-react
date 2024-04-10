@@ -16,7 +16,7 @@ const ProductDetailPage = () => {
             <SubHeader current={selectedProduct.name} detail={true} />
             <Row>
                 <ProductDetail product={selectedProduct}/>
-                <ReviewsList productId={productId}/>
+                {/* <ReviewsList productId={productId}/> */}
             </Row>
         </Container>
     )

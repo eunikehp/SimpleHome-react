@@ -43,7 +43,7 @@ export const REVIEWS = [
         id: 5,
         productId: 1,
         rating: 4,
-        text: "There's nothing more fun than setting up a tent in a rainstorm.",
+        text: "Perfect size for my not so large living room. 6 people fit for occasional…. Easier for 3/4. Narrow/slim appearance",
         author: 'Juan Cortez',
         date: '2017-06-17T03:33Z'
     },
@@ -51,7 +51,7 @@ export const REVIEWS = [
         id: 6,
         productId: 1,
         rating: 5,
-        text: 'I caught a world-record-breaking trout here on my last visit.',
+        text: 'Beautiful table, exactly suitable for the desired purpose. Also nice to read or eat.',
         author: 'McKenzie Sebastian',
         date: '2019-02-18T18:12Z'
     },
@@ -59,7 +59,7 @@ export const REVIEWS = [
         id: 7,
         productId: 1,
         rating: 5,
-        text: 'The campground was beautiful, but the bugs could bite sometimes.',
+        text: "The table is easy to assemble and looks good. The size is ideal if your living room is not super large. I'm very happy with it.",
         author: 'Brennen Ech',
         date: '2019-08-04T20:11Z'
     },
@@ -67,7 +67,7 @@ export const REVIEWS = [
         id: 8,
         productId: 1,
         rating: 4,
-        text: "Love the river but I didn't catch any fish.",
+        text: "With a small adjustment, caps that would make the table sturdier would make the table absolutely fantastic.",
         author: 'Amy Keophilavong',
         date: '2018-07-23T19:44Z'
     },
@@ -75,7 +75,7 @@ export const REVIEWS = [
         id: 9,
         productId: 1,
         rating: 5,
-        text: 'A wonderful place to reconnect with nature.',
+        text: 'Nice solid dining table!',
         author: 'Jordan Runn',
         date: '2019-08-04T20:11Z'
     },
@@ -83,7 +83,7 @@ export const REVIEWS = [
         id: 10,
         productId: 2,
         rating: 5,
-        text: 'The Frozen Tundra is great place for family and friends camping!',
+        text: 'Very happy with it! Wonderfully large. Fits fantastic! The cushions need to loosen up, it will take a few days. We are very happy with it!',
         author: 'Olaf the Snowman',
         date: '2019-02-18T18:12Z'
     },
@@ -91,7 +91,7 @@ export const REVIEWS = [
         id: 11,
         productId: 2,
         rating: 1,
-        text: 'We had to leave about 2am to go back to the city because the quiet was just too much!',
+        text: 'Lovely sofa to sink into. Because this is modular, various options have been tried before attaching it together.',
         author: 'Vincent and Mona Lisa Gambini',
         date: '2018-10-25T16:30Z'
     },
@@ -99,7 +99,7 @@ export const REVIEWS = [
         id: 12,
         productId: 3,
         rating: 5,
-        text: 'The stars at night were a revelation!',
+        text: 'Good sturdy and solid bed, good finish',
         author: 'Ann Dabramov',
         date: '2018-07-23T19:44Z'
     },
@@ -107,7 +107,7 @@ export const REVIEWS = [
         id: 13,
         productId: 3,
         rating: 4,
-        text: 'Great scenic hiking trails but it was challenging to go up the mountain.',
+        text: "Lovely bed. Simple in appearance, but that's what we like. Easy to assemble.",
         author: 'Amy Keophilavong',
         date: '2018-10-25T16:30Z'
     },
@@ -115,7 +115,7 @@ export const REVIEWS = [
         id: 14,
         productId: 4,
         rating: 5,
-        text: 'Perfect scenery for a smoked kipper breakfast with friends!',
+        text: 'nice sofa. nice relaxing on it.',
         author: 'Dave Lister',
         date: '2019-08-04T20:11Z'
     },
@@ -123,7 +123,7 @@ export const REVIEWS = [
         id: 15,
         productId: 4,
         rating: 4,
-        text: 'Just remember a bear can run and climb faster than you...',
+        text: 'The seating comfort is not that great, but that is inherent to the price.',
         author: 'Markell Richards',
         date: '2017-06-17T03:33Z'
     },
@@ -131,7 +131,7 @@ export const REVIEWS = [
         id: 16,
         productId: 5,
         rating: 5,
-        text: 'Excellent site to recharge from the city.',
+        text: 'nice sofa. nice relaxing on it',
         author: 'Amy Keophilavong',
         date: '2018-07-23T19:44Z'
     },
@@ -139,7 +139,7 @@ export const REVIEWS = [
         id: 17,
         productId: 5,
         rating: 5,
-        text: 'What a magnificent view!',
+        text: 'Super nice and compact bench',
         author: 'Tinus Lorvaldes',
         date: '2018-10-25T16:30Z'
     },
@@ -147,7 +147,7 @@ export const REVIEWS = [
         id: 18,
         productId: 6,
         rating: 4,
-        text: 'The sites are huge! We felt like we were in the middle of nowhere, in a good way.',
+        text: "I'm very happy with it",
         author: 'Chloe Haskins',
         date: '2017-06-17T03:33Z'
     },
@@ -155,7 +155,7 @@ export const REVIEWS = [
         id: 19,
         productId: 6,
         rating: 5,
-        text: "The photos don't do justice to the beauty of this place.",
+        text: "Nice bed, easy to put together and with the right mattress you sleep wonderfully.",
         author: 'Minae Lee',
         date: '2019-02-18T18:12Z'
     }

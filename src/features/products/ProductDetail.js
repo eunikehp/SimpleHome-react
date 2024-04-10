@@ -2,22 +2,37 @@ import { Col, Button, Row } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../cart/CartSlice';
+import { addFavorite } from '../favorites/FavoritesSlice';
+import ReviewsList from '../reviews/ReviewsList';
+import { useParams } from 'react-router-dom';
 
 const ProductDetail = ({ product }) => {
     const { id, image, price, name, description, category, stockCount } = product;
+    const { productId } = useParams(); 
 
     const dispatch = useDispatch();
 
     const handleAddToCart = () => {
         const item = {
-        id: id,
-        name: name,
-        image: image,
-        price: price,
-        category: category
+            id: id,
+            name: name,
+            image: image,
+            price: price,
+            category: category
         };
         console.log('item:', item);
         dispatch(addItem(item));
+    }
+
+    const handleAddToFavorites = () => {
+        const item = {
+            id: id,
+            name: name,
+            image: image,
+            price: price,
+            category: category
+        };
+        dispatch(addFavorite(item));
     }
 
     return (
@@ -47,12 +62,24 @@ const ProductDetail = ({ product }) => {
                             />Add to cart</Button>
                     </Col>
                     <Col>
-                        <Button href='#' block className='mb-4' style={{ backgroundColor: '#ac2f8a', border: 'none', padding: '10px 10px' }}>♡ Add to my wishlist</Button>
+                        <Button 
+                            block 
+                            className='mb-4' 
+                            style={{ 
+                                backgroundColor: '#ac2f8a', 
+                                border: 'none', 
+                                padding: '10px 10px' 
+                            }}
+                            onClick={handleAddToFavorites}
+                            >♡ Add to my wishlist</Button>
                     </Col>
+                </Row>
+                <Row>
                     <div className='text-danger mb-3'>Stock: {stockCount}</div>
                     <h4>Product Information</h4>
                     <hr />
                     <div className='fs-6'>{description}</div>
+                    <ReviewsList productId={productId}/>
                 </Row>
             </Col>
         </Row >

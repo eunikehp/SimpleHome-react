@@ -36,8 +36,6 @@ const FAQPage = () => {
                                 Via the  SimpleHome website  you get a very good idea of ​​the wide range of SimpleHome products.
                                 You won't find some products online, but most of them will!
                                 Moreover, you can also order a large number of our products directly in the store of your choice.
-                                You can recognize products that you cannot order online by the “Only in store” button when you hover
-                                your mouse over a product.
                             </AccordionBody>
                         </AccordionItem>
                         <AccordionItem>

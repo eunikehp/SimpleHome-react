@@ -13,20 +13,27 @@ import SimpleHomeLogo from '../app/assets/img/logo.png';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import UserForm from '../features/user/UserForm';
-import FavoritePage from '../pages/FavoritePage';
 import { useSelector } from 'react-redux';
 import { selectAllCart } from '../features/cart/CartSlice';
+import { selectAllFavorites } from '../features/favorites/FavoritesSlice';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // const cart = useSelector((state) => state.cart.cartArray)
   const cart = useSelector(selectAllCart)
+  const favorites = useSelector(selectAllFavorites)
 
   const getTotalQuantity = () => {
     let total = 0
     cart.forEach(item => { total += item.quantity});
     return total;
+  }
+
+  const getTotalFav = () => {
+    let totalFav = 0
+    favorites.forEach(item => { totalFav += 1});
+    return totalFav;
   }
 
   return (
@@ -82,17 +89,23 @@ const Header = () => {
         </NavItem>
         <NavItem>
           <NavLink
-            to='/favorites' >
+            to='/favorites'
+            style={{position:'relative',color: '#463F3A'}} >
             <FontAwesomeIcon
               className='navbar-icon'
               icon="fa-solid fa-heart"
             />
+            <Badge 
+              color="danger"
+              style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'10px', borderRadius: '50%'}}>
+                {getTotalFav() || 0 }
+            </Badge>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
             to='/cart'
-            style={{position:'relative'}}>
+            style={{position:'relative', color: '#463F3A'}}>
             <FontAwesomeIcon
               className='navbar-icon'
               icon="fa-solid fa-cart-shopping"
@@ -100,7 +113,7 @@ const Header = () => {
             <Badge 
               color="danger"
               style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'10px', borderRadius: '50%'}}>
-              {getTotalQuantity() || 0 }
+                {getTotalQuantity() || 0 }
             </Badge>
           </NavLink>
         </NavItem>

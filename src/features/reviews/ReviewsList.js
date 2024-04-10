@@ -25,7 +25,7 @@ const ReviewsList = ({ productId }) => {
 
     if (reviews && reviews.length > 0) {
         return (
-            <Col md='6' className='m-1'>
+            <Col >
                 <Accordion flush open={open} toggle={toggle}>
                     <AccordionItem>
                         <AccordionHeader targetId="1">Customer reviews</AccordionHeader>

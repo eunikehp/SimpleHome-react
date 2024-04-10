@@ -7,16 +7,16 @@ const OrderSummary = () => {
 
     const getTotal = () => {
         let totalQuantity = 0;
-        let totalPrice = 0;
+        let subTotal = 0;
         let totalAmount = 0;
         let postageCost = 12;
 
         cart.forEach(item => {
             totalQuantity += item.quantity
-            totalPrice += item.price * item.quantity
-            totalAmount += totalPrice + postageCost
+            subTotal += item.price * item.quantity
+            totalAmount = subTotal + postageCost
         });
-        return {totalPrice, totalQuantity, postageCost, totalAmount}
+        return {subTotal, totalQuantity, postageCost, totalAmount}
     }
     return (
         <Container className='pt-3' style={{backgroundColor:'#F4F3EE'}}>
@@ -24,12 +24,12 @@ const OrderSummary = () => {
                 <h4>Order Summary</h4>
             </Row>
             <Row className='mb-5'>
-                <div>Total({getTotal().totalQuantity} items)</div>
+                <div>Total ({getTotal().totalQuantity} {(getTotal().totalQuantity > 1) ? 'items' : 'item'})</div>
                 <Col md='9'>
                     <div>Subtotal </div>
                 </Col>
                 <Col md='3' >
-                    <div >€ {getTotal().totalPrice}</div>
+                    <div >€ {getTotal().subTotal}</div>
                 </Col>
             </Row>
             <Row>
