@@ -1,19 +1,19 @@
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
 import { useState } from 'react';
-import {
-    Accordion,
-    AccordionBody,
-    AccordionHeader,
-    AccordionItem,
-} from 'reactstrap';
 
 
 const FavoritePage = () => {
+
+    const myList = () => {
+
+    }
+
     return (
         <Container>
-            <SubHeader current='Favorites'/>
-
+            <SubHeader current='Favorites' />
+            <h2>Wish List</h2>
+            
         </Container>
     )
 };

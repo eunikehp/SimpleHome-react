@@ -3,12 +3,14 @@ import { productsReducer } from '../features/products/productsSlice';
 import { reviewsReducer } from '../features/reviews/reviewsSlice';
 import { userReducer } from '../features/user/userSlice';
 import logger from 'redux-logger';
+import { cartReducer } from '../features/cart/CartSlice';
 
 export const store = configureStore({
   reducer: {
     products: productsReducer,
     reviews: reviewsReducer,
-    user: userReducer
+    user: userReducer,
+    cart: cartReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });

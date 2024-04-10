@@ -15,7 +15,7 @@ const productsSlice = createSlice ({
 export const productsReducer = productsSlice.reducer;
 
 
-
+//slice
 export const selectAllProducts = (state) => {
     return state.products.productsArray;
 };
@@ -23,7 +23,7 @@ export const selectAllProducts = (state) => {
 export const selectProductById = (id) => (state) => {
     return state.products.productsArray.find(
         (product) => product.id === parseInt(id)
-    ); // convert id from string to integer
+    ); 
 };
 
 
