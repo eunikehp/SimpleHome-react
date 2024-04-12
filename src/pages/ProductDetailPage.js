@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectProductById } from '../features/products/productsSlice';
 import ProductDetail from '../features/products/ProductDetail';
-import ReviewsList from '../features/reviews/ReviewsList';
 import SubHeader from '../components/SubHeader';
 
 const ProductDetailPage = () => {
@@ -16,7 +15,6 @@ const ProductDetailPage = () => {
             <SubHeader current={selectedProduct.name} detail={true} />
             <Row>
                 <ProductDetail product={selectedProduct}/>
-                {/* <ReviewsList productId={productId}/> */}
             </Row>
         </Container>
     )

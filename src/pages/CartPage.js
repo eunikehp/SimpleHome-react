@@ -1,6 +1,5 @@
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row} from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import OrderSummary from '../components/OrderSummary';
 import CartList from '../features/cart/CartList';
 
 

@@ -5,33 +5,69 @@
 
 ## Description
 
-Simple Home is a fictional furniture store that sold products not only on their store but also through their website. In the website, customers can view all items that are available and then order them by adding or removing from their carts. Some of their products are dining tables, wardrobes, kitchen cabinets, sofas, beds, etc. 
+Simple Home is a fictional furniture store that sells products through its website. Some of the products include dining tables, wardrobes, kitchen cabinets, sofas, beds, etc. On this website, users can browse all available items and add or remove them from their carts. They can also save favorite items to their wish list. Additionally, users have the option to create an account or sign in to an existing one. Furthermore, users can leave reviews if desired.
 
-Simple Home is a dynamic web app. It features a Home page, Shop page, Contact Page, FAQ page and Login Page. The website is created by using React and Redux library that handles application state management. To create it a single page website, React Router library is used. 
+Simple Home is a dynamic web application featuring a Home page, Shop page, Contact Page, FAQ page, and Login Page. The website is built using React and utilizes the [Redux](https://redux.js.org/) library for application state management and [Redux Toolkit](https://redux-toolkit.js.org/) template. React Router is employed to transform it into a single-page website.
 
-This website is a continuation of previous Javascript project and is converted into React version. This project is for portfolio project - React at Nucamp Web and Mobile App Development.
+This website is an evolution of a previous JavaScript project, now converted into a React version. It serves as a portfolio project for the React course at Nucamp Web and Mobile App Development.
 
-## Dependencies
+## Technologies
 
-1. [Bootstrap](https://www.npmjs.com/package/bootstrap)
-2. [Bootstrap-social](https://www.npmjs.com/package/bootstrap-social)
-3. [Font-awesome](https://www.npmjs.com/package/font-awesome)
-4. [Formik](https://www.npmjs.com/package/formik)
-5. [React-router-dom](https://www.npmjs.com/package/react-router-dom)
-6. [React-spring](https://www.npmjs.com/package/react-spring)
-7. [Reactstrap](https://www.npmjs.com/package/reactstrap)
-8. [Redux-logger](https://www.npmjs.com/package/redux-logger)
-9. [Typeface-open-sans](https://www.npmjs.com/package/typeface-open-sans)
-10. [Typeface-roboto](https://www.npmjs.com/package/typeface-roboto)
+### Frontend
 
-### Libraries
+- **HTML5**: Used for structuring the content of web pages.
+- **CSS3**: Used for styling the appearance of web pages.
+- **JavaScript (ES6+)**: Used for implementing interactive features and client-side scripting.
+- **React**: JavaScript library used for building user interfaces and managing state.
+- **Redux**: State management library used with React for managing complex application state.
 
-1. React Router
-React Router is a third party library in the open-source React ecosystem that handles routing to different views from within a React application.
-2. Redux
-Redux is a third party state management library for JavaScript applications such as React.
+<!-- ### Backend
+
+- **Node.js**: JavaScript runtime used for building scalable server-side applications.
+- **Express.js**: Web application framework for Node.js used for building RESTful APIs and handling HTTP requests.
+- **MongoDB**: NoSQL database used for storing and managing data.
+- **Mongoose**: MongoDB object modeling library for Node.js used for interacting with MongoDB databases. -->
+
+### Development Tools
+
+- **Git**: Version control system used for tracking changes and collaborating on the project.
+- **GitHub**: Web-based hosting service used for version control and collaboration.
+- **VS Code**: Source code editor used for writing, editing, and debugging code.
+- **npm**: Package manager for Node.js used for installing and managing project dependencies.
+- **Webpack**: Module bundler used for bundling JavaScript files for the browser.
+<!-- - **Babel**: JavaScript compiler used for transpiling modern JavaScript code to a backwards-compatible version for older browsers. -->
+
+### Dependencies
+
+1. [Bootstrap](https://www.npmjs.com/package/bootstrap): Framework for developing responsive, mobile first projects on the web.
+<!-- 2. [Bootstrap-social](https://www.npmjs.com/package/bootstrap-social): provides ready-to-use styling for various social media buttons and icons. -->
+2. [Font-awesome](https://www.npmjs.com/package/font-awesome): Provides vast collection of scalable vector icons.
+3. [Formik](https://www.npmjs.com/package/formik): Form management library used for handling form state, validation, submission, and error in React component.
+4. [React-router-dom](https://www.npmjs.com/package/react-router-dom): React third party library that handles routing to different views from within a React application.
+<!-- 6. [React-spring](https://www.npmjs.com/package/react-spring) -->
+5. [Reactstrap](https://www.npmjs.com/package/reactstrap): Library that provides Bootstrap components built specifically for React applications.
+6. [Redux-logger](https://www.npmjs.com/package/redux-logger): A middleware for Redux, to log Redux actions and state changes to the console, providing developers with valuable insights into the behavior of their Redux-powered applications during development.
+7. [Redux-thunk](https://redux.js.org/usage/writing-logic-thunks): Redux middleware allows asynchronous logic to be dispatched as actions in Redux.
+8. [Typeface-open-sans](https://www.npmjs.com/package/typeface-open-sans): A package that provides the Open Sans font family for use in web development projects.
+9. [Typeface-roboto](https://www.npmjs.com/package/typeface-roboto): A package that provides the Roboto font family for use in web development projects.
+
+## Features
+
+- **User Authentication**: Allow users to sign up, log in, and log out securely.
+- **Responsive Design**: Ensure the application is fully responsive and optimized for various devices and screen sizes.
+- **Product Catalog**: Display a catalog of products with detailed information, including images, descriptions, and prices.
+- **Shopping Cart**: Allow users to add products to their cart, view the items in their cart, and proceed to checkout.
+- **Wishlist** : Allow users to add products to a wishlist for future reference or purchase. Provide options to view, manage, and share wishlist items.
+
+- **Reviews and Ratings**: Enable users to leave reviews and ratings for products, and display aggregated ratings on product pages.
+
 
 <!--
+
+Install and set up a RESTful development server called json-server that can locally serve JSON data as well as static content.
+npm install json-server -g
+
+
 ## Launch
 
 Consider also using additional elements such as: 
@@ -91,3 +127,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 -->
+

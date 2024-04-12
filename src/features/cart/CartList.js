@@ -1,4 +1,4 @@
-import { Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
 import CardItem from '../cart/CartItem';
 import { useSelector } from "react-redux";
 import { selectAllCart } from "./CartSlice";
