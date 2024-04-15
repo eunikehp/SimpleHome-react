@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchProducts } from './features/products/productsSlice';
+import { fetchReviews } from './features/reviews/reviewsSlice';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchProducts());
+    dispatch(fetchReviews());
   }, [dispatch]); //use dispatch as dependencies array because we use a function defined outside of the call to use this effect inside this effect
 
   return (

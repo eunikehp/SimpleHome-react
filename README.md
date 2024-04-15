@@ -58,7 +58,6 @@ This website is an evolution of a previous JavaScript project, now converted int
 - **Product Catalog**: Display a catalog of products with detailed information, including images, descriptions, and prices.
 - **Shopping Cart**: Allow users to add products to their cart, view the items in their cart, and proceed to checkout.
 - **Wishlist** : Allow users to add products to a wishlist for future reference or purchase. Provide options to view, manage, and share wishlist items.
-
 - **Reviews and Ratings**: Enable users to leave reviews and ratings for products, and display aggregated ratings on product pages.
 
 

@@ -10,11 +10,24 @@ import {
     AccordionItem,
 } from 'reactstrap';
 import { useSelector } from "react-redux";
+import Error from "../../components/Error";
+import Loading from "../../components/Loading";
 
 const ReviewsList = ({ productId }) => {
     const reviews = useSelector(selectReviewsByProductId(productId));
-
     const [open, setOpen] = useState('');
+    
+    //error and loading
+    const isLoading = useSelector((state) => state.reviews.isLoading);
+    const errMsg = useSelector((state) => state.reviews.errMsg);
+    if (isLoading) {
+        return <Loading />;
+    }
+    if (errMsg) {
+        return <Error errMsg={errMsg} />;
+    }
+
+    
     const toggle = (id) => {
         if (open === id) {
             setOpen();

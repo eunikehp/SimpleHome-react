@@ -1,6 +1,5 @@
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container} from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import { useState } from 'react';
 import FavoritesList from '../features/favorites/FavoritesList';
 
 

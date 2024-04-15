@@ -1,18 +1,27 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // import { PRODUCTS } from "../../app/shared/PRODUCTS";
-import { baseUrl } from '../../app/shared/baseUrl';
+// import { baseUrl } from '../../app/shared/baseUrl';
 import { mapImageURL } from '../../utils/mapImageURL';
+import { db } from '../../firebase.config';
+import { collection, getDocs } from 'firebase/firestore';
 
 //thunk
 export const fetchProducts = createAsyncThunk(
     'products/fetchProducts',
     async () => {
-        const response = await fetch (baseUrl + 'products');
-        if (!response.ok) {
-            return Promise.reject('Unable to fetch, status:' + response.status)
-        }
-        const data = await response.json();
-        return data;
+        // const response = await fetch(baseUrl + 'products');
+        // if (!response.ok) {
+        //     return Promise.reject('Unable to fetch, status:' + response.status)
+        // }
+        // const data = await response.json();
+        // return data;
+
+        const querySnapshot = await getDocs(collection(db, 'products'));
+        const products = [];
+        querySnapshot.forEach((doc) => {
+            products.push(doc.data());
+        });
+        return products;
     }
 );
 
