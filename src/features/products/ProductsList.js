@@ -2,9 +2,31 @@ import ProductCard from "./ProductCard";
 import { Col, Row } from 'reactstrap';
 import { selectAllProducts } from "./productsSlice";
 import { useSelector } from "react-redux";
+import Error from "../../components/Error";
+import Loading from "../../components/Loading";
 
 const ProductsList = () => {
     const products = useSelector(selectAllProducts);
+
+    //error and loading
+    const isLoading = useSelector((state) => state.products.isLoading);
+    const errMsg = useSelector((state) => state.products.errMsg);
+
+    if (isLoading) {
+        return (
+            <Row>
+                <Loading />
+            </Row>
+        )
+    }
+
+    if (errMsg) {
+        return (
+            <Row>
+                <Error errMsg={errMsg}/>
+            </Row>
+        )
+    }
 
     return (
         <>
