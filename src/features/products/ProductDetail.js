@@ -17,6 +17,7 @@ const ProductDetail = ({ product }) => {
     const onDismiss = () => setVisible(false);
     const onDismissNotif = () => setNotif(false);
 
+    //replace button Love
     const [replaceButton, setReplaceButton] =useState(true);
 
     const dispatch = useDispatch();

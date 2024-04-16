@@ -1,13 +1,20 @@
-import { Button, Label, Col, FormGroup } from 'reactstrap';
+import { Button, Label, Col, FormGroup, Alert } from 'reactstrap';
 import { Formik, Form, Field, ErrorMessage} from 'formik';
 import { validateContactForm } from '../utils/validateContactForm';
+import { useState } from 'react';
 
 const ContactForm = () => {
+    //notif submit is successfull
+    const [visible, setVisible] = useState(false);
+    const onDismiss = () => setVisible(false);
+
     const handleSubmit= (values, {resetForm}) => {
         console.log('form values: ', values);
         console.log('in JSON format: ', JSON.stringify(values));
+        setVisible(true);
         resetForm();
     };
+
 
     return (
         <Formik
@@ -81,7 +88,10 @@ const ContactForm = () => {
                 </FormGroup>
                 <FormGroup>
                     <Col>
-                        <Button active type='submit'>Submit</Button>
+                        <Button active type='submit' className='mb-2'>Submit</Button>
+                        <Alert fade isOpen={visible} toggle={onDismiss}>
+                                Your message has been successfully sent.
+                        </Alert>
                     </Col>
                 </FormGroup>
             </Form>

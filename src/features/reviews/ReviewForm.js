@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Button, Offcanvas, OffcanvasHeader, FormGroup, Label } from 'reactstrap';
+import { Button, Offcanvas, OffcanvasHeader, FormGroup, Label} from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateReviewForm } from "../../utils/validateReviewForm";
 // import { addReview } from "./reviewsSlice";
@@ -9,11 +9,10 @@ import { postReview } from "./reviewsSlice";
 const ReviewForm = ({ productId }) => {
     const [canvasOpen, setCanvasOpen] = useState(false);
 
-
     //dispatch / update review
     const dispatch = useDispatch();
 
-    const handleSubmit = (values,{resetForm}) => {
+    const handleSubmit = (values, { resetForm }) => {
         const review = {
             productId: parseInt(productId),
             rating: values.rating,
@@ -94,7 +93,6 @@ const ReviewForm = ({ productId }) => {
                             Submit review
                         </Button>
                     </Form>
-
                 </Formik>
             </Offcanvas>
 

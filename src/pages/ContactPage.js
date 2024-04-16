@@ -3,6 +3,8 @@ import SubHeader from '../components/SubHeader';
 import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
+
+
     return (
         <Container className='content'>
             <SubHeader current='Contact' />
