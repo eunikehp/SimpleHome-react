@@ -58,16 +58,16 @@ const Footer = () => {
                     </Col>
                     <Col xs='12' sm='12' className='text-center'>
                         <List type='unstyled' className='text-center'>
-                            <li>
+                            <li className='mb-3 mt-3'>
                                 <Link to='/'>Home</Link>
                             </li>
-                            <li>
+                            <li className='mb-3'>
                                 <Link to='/shop'>Shop</Link>
                             </li>
-                            <li>
+                            <li className='mb-3'>
                                 <Link to='/contact'>Contact</Link>
                             </li>
-                            <li>
+                            <li className='mb-3'> 
                                 <Link to='/faq'>FAQ</Link>
                             </li>
                         </List>

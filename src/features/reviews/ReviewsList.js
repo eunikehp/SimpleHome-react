@@ -38,10 +38,10 @@ const ReviewsList = ({ productId }) => {
 
     if (reviews && reviews.length > 0) {
         return (
-            <Col >
+            <Col className='p-0' >
                 <Accordion flush open={open} toggle={toggle}>
                     <AccordionItem>
-                        <AccordionHeader targetId="1">Customer reviews</AccordionHeader>
+                        <AccordionHeader targetId="1"><h5>Customer reviews</h5></AccordionHeader>
                         <AccordionBody accordionId="1">
                             {reviews.map((review) => {
                                 return <Review key={review.id} review={review} />;

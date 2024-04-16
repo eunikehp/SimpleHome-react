@@ -6,7 +6,7 @@ import ShopMenu from '../components/ShopMenu';
 const ShopPage = () => {
 
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='Shop'/>
             {/* <ShopMenu/> */}
             <Row >

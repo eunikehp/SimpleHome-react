@@ -6,9 +6,10 @@ import FavoritesList from '../features/favorites/FavoritesList';
 const FavoritePage = () => {
 
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='Favorites' />
             <h2>Wish List</h2>
+            <hr/>
             <FavoritesList />
         </Container>
     )

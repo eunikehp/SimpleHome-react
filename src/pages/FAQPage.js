@@ -20,7 +20,7 @@ const FAQPage = () => {
     };
 
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='FAQ' />
             <Row className='justify-content-center'>
                 <Col md='12'>

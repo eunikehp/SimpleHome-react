@@ -1,5 +1,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
 }
 
 h1,
@@ -40,6 +43,9 @@ h2 {
     min-height: 200px;
 } */
 
+.content {
+    min-height: 50vh;
+}
 .site-footer {
     background-color: #F4F3EE;
     padding: 20px 0;

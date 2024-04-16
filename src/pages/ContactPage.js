@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='Contact' />
             <Row className='text-center'>
                 <Col>

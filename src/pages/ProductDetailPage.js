@@ -26,7 +26,7 @@ const ProductDetailPage = () => {
     }
     
     return (
-        <Container>
+        <Container className='content'>
             {selectedProduct &&<SubHeader current={selectedProduct.name} detail={true} />}
             <Row>
                 {content}

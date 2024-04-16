@@ -6,7 +6,7 @@ import CartList from '../features/cart/CartList';
 const CartPage = () => {
 
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='Order' />
             <h2>Shopping Cart</h2>
             <hr/>

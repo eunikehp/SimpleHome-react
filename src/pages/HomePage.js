@@ -4,7 +4,7 @@ import SubHeader from '../components/SubHeader';
 
 const HomePage = () => {
     return (
-        <Container>
+        <Container className='content'>
             <SubHeader current='Home'/>
             <img 
                 width='100%'
