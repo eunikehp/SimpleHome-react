@@ -1,4 +1,3 @@
-import { Container, Row } from 'reactstrap';
 import ProductsList from '../features/products/ProductsList';
 import SubHeader from '../components/SubHeader';
 import ShopMenu from '../components/ShopMenu';
@@ -6,13 +5,13 @@ import ShopMenu from '../components/ShopMenu';
 const ShopPage = () => {
 
     return (
-        <Container className='content'>
+        <div className='content'>
             <SubHeader current='Shop'/>
             {/* <ShopMenu/> */}
-            <Row >
+            <div >
                 <ProductsList /> 
-            </Row>
-        </Container>
+            </div>
+        </div>
 
     );
 };
