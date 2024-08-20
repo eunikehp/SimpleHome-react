@@ -1,4 +1,4 @@
-import { Container, Row } from 'reactstrap';
+import { Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectProductById } from '../features/products/productsSlice';
@@ -26,12 +26,12 @@ const ProductDetailPage = () => {
     }
     
     return (
-        <Container className='content'>
+        <div className='page-container'>
             {selectedProduct &&<SubHeader current={selectedProduct.name} detail={true} />}
             <Row>
                 {content}
             </Row>
-        </Container>
+        </div>
     )
 }
 

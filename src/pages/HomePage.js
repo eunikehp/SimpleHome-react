@@ -10,7 +10,7 @@ const HomePage = () => {
         <img className="home-img" src={Cover} alt="cover" />
       </div>
 
-      <div className="home-container">
+      <div className="page-container">
         <section className="home-description-box">
           <div className="home-description">
             <h1>Transform Your Space, Elevate Your Life</h1>
@@ -41,7 +41,6 @@ const HomePage = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
               >
                 <path
                   stroke-linecap="round"
@@ -68,7 +67,6 @@ const HomePage = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
               >
                 <path
                   stroke-linecap="round"
@@ -94,7 +92,6 @@ const HomePage = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
               >
                 <path
                   stroke-linecap="round"
@@ -115,22 +112,27 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* <section className="feature">
-          <div className="feature-title">
-            <h2>Explore Our Products</h2>
+        <section className="category">
+          <div className="category-title">
+            <h2>Shop by Category</h2>
+            <h3>Discover the Perfect Piece for Every Room</h3>
           </div>
-          <ul className="feature-product">
-            <li className="feature-item">
+          <ul className="category-list">
+            <li className="category-item">
               <img></img>
+              <p>Sofa</p>
             </li>
-            <li className="feature-item">
+            <li className="category-item">
               <img></img>
+              <p>Bed</p>
             </li>
-            <li className="feature-item">
+            <li className="category-item">
               <img></img>
+              <p>Dining Table</p>
             </li>
+            
           </ul>
-        </section> */}
+        </section>
       </div>
     </div>
   );

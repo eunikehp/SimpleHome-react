@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // import { PRODUCTS } from "../../app/shared/PRODUCTS";
 // import { baseUrl } from '../../app/shared/baseUrl';
 import { mapImageURL } from '../../utils/mapImageURL';
-import { db } from '../firebase.config';
+import { db } from '../../firebase.config';
 import { collection, getDocs } from 'firebase/firestore';
 
 //thunk

@@ -1,49 +1,43 @@
 import ProductCard from "./ProductCard";
-import { Col, Row } from 'reactstrap';
+import { Col, Row } from "reactstrap";
 import { selectAllProducts } from "./productsSlice";
 import { useSelector } from "react-redux";
 import Error from "../../components/Error";
 import Loading from "../../components/Loading";
 
 const ProductsList = () => {
-    const products = useSelector(selectAllProducts);
+  const products = useSelector(selectAllProducts);
 
-    //error and loading
-    const isLoading = useSelector((state) => state.products.isLoading);
-    const errMsg = useSelector((state) => state.products.errMsg);
+  //error and loading
+  const isLoading = useSelector((state) => state.products.isLoading);
+  const errMsg = useSelector((state) => state.products.errMsg);
 
-    if (isLoading) {
-        return (
-            <Row>
-                <Loading />
-            </Row>
-        )
-    }
-
-    if (errMsg) {
-        return (
-            <Row>
-                <Error errMsg={errMsg}/>
-            </Row>
-        )
-    }
-
+  if (isLoading) {
     return (
-        <>
-            <Row className="ms-auto">
-                {products.map((product) => {
-                    return (
-                        <Col
-                            md='2'
-                            className="m-1"
-                            key={product.id}
-                        >
-                            <ProductCard product={product} />
-                        </Col>
-                    );
-                })}
-            </Row>
-            {/* <Row>
+      <div>
+        <Loading />
+      </div>
+    );
+  }
+
+  if (errMsg) {
+    return (
+      <div>
+        <Error errMsg={errMsg} />
+      </div>
+    );
+  }
+
+  return (
+    <>
+        {products.map((product) => {
+          return (
+            <div className='product' key={product.id}>
+              <ProductCard product={product} />
+            </div>
+          );
+        })}
+      {/* <Row>
                 <nav aria-label="Page navigation example">
                     <ul className="pagination justify-content-center mt-4">
                         <li className="page-item">
@@ -62,8 +56,8 @@ const ProductsList = () => {
                     </ul>
                 </nav>
             </Row> */}
-        </>
-    );
+    </>
+  );
 };
 
 export default ProductsList;

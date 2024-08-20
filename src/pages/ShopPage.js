@@ -8,7 +8,7 @@ const ShopPage = () => {
         <div className='content'>
             <SubHeader current='Shop'/>
             {/* <ShopMenu/> */}
-            <div >
+            <div className='product-list'>
                 <ProductsList /> 
             </div>
         </div>

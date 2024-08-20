@@ -6,14 +6,14 @@ import CartList from '../features/cart/CartList';
 const CartPage = () => {
 
     return (
-        <Container className='content'>
+        <div className='page-container'>
             <SubHeader current='Order' />
             <h2>Shopping Cart</h2>
             <hr/>
             <Row>
                 <CartList />
             </Row>
-        </Container>
+        </div>
     )
 };
 

@@ -20,7 +20,7 @@ const FAQPage = () => {
     };
 
     return (
-        <Container className='content'>
+        <div className='page-container'>
             <SubHeader current='FAQ' />
             <Row className='justify-content-center'>
                 <Col md='12'>
@@ -62,7 +62,7 @@ const FAQPage = () => {
                     </Accordion>
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 };
 

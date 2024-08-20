@@ -1,29 +1,42 @@
-import { Row, Col, List } from "reactstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="company-info">
         <div className="location">
-          <h6>Location</h6>
+          <h5>Location</h5>
           <p>
             Bronkhorststraat 30
             <br />
             2718 AT Den Haag, The Netherlands
           </p>
-          <h6>Opening Hours</h6>
+          <h5>Opening Hours</h5>
           <p>
             Monday - Saturday 10.00-18.00
             <br />
             Sunday 12.00-18.00
           </p>
         </div>
+        <ul className="footer-menu">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
+        </ul>
         <div className="contact">
-          <div className="center">
-            <h6>Contact us:</h6>
-            <div>
+          <div className="column">
+            <h5>Contact us:</h5>
+            <div className="column-link">
               <a
                 role="button"
                 className="btn btn-link btn-sm"
@@ -40,8 +53,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="center">
-            <h6>Follow us:</h6>
+          <div className="column">
+            <h5>Follow us:</h5>
             <div className="grid-col-4">
               <a href="http://instagram.com/" className="social">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />
@@ -58,26 +71,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <List type="unstyled" className="menu">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/shop">Shop</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/faq">FAQ</Link>
-          </li>
-        </List>
       </div>
 
       <div className="credit">
         <p>2024 Simple Home. Site by Eunike Hedriani Pardede</p>
       </div>
-    </footer>
+    </div>
   );
 };
 
