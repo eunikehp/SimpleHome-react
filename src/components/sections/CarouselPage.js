@@ -1,6 +1,6 @@
-import Cover1 from '../app/assets/img/cover.jpg';
-import Cover2 from '../app/assets/img/cover2.jpg';
-import Cover3 from '../app/assets/img/cover3.jpg';
+import Cover1 from '../../app/assets/img/cover.jpg';
+import Cover2 from '../../app/assets/img/cover2.jpg';
+import Cover3 from '../../app/assets/img/cover3.jpg';
 import React, { useState } from 'react';
 import {
   Carousel,
