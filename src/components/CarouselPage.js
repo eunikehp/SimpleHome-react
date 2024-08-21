@@ -1,4 +1,6 @@
 import Cover1 from '../app/assets/img/cover.jpg';
+import Cover2 from '../app/assets/img/cover2.jpg';
+import Cover3 from '../app/assets/img/cover3.jpg';
 import React, { useState } from 'react';
 import {
   Carousel,
@@ -10,21 +12,21 @@ import {
 
 const items = [
   {
-    src: {Cover1},
+    src: Cover1,
     altText: 'Slide 1',
-    caption: 'Slide 1',
+    // caption: 'Slide 1',
     key: 1,
   },
   {
-    src: {Cover1},
+    src: Cover2,
     altText: 'Slide 2',
-    caption: 'Slide 2',
+    // caption: 'Slide 2',
     key: 2,
   },
   {
-    src: {Cover1},
+    src: Cover3,
     altText: 'Slide 3',
-    caption: 'Slide 3',
+    // caption: 'Slide 3',
     key: 3,
   },
 ];
@@ -57,7 +59,7 @@ function CarouselPage(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} style={{height: '600px', width: '100%', objectFit:'cover'}}/>
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}

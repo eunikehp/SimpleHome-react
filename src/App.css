@@ -40,6 +40,12 @@ section,
   margin-bottom: 96px;
 }
 
+.carousel-section {
+  max-width: 100%;
+  height: 600px;
+}
+
+
 h1,
 h2,
 h3,
@@ -156,6 +162,10 @@ h3 {
   cursor: pointer;
 }
 
+.nav-link:hover {
+  font-weight: 600;
+}
+
 .page-enter {
   opacity: 0;
   transform: translateX(-100%);
@@ -231,7 +241,8 @@ h3 {
   line-height: 1.7;
 }
 
-CATEGORY
+
+/* CATEGORY */
 .category {
   display: flex;
   flex-direction: column;
