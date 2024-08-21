@@ -23,8 +23,9 @@ const CartItem = ({ item }) => {
         <Row className='mb-2'>
             <Col md='3'>
                 <img
-                    width='100%'
-                    height='auto'
+                    max-width='100%'
+                    height='120px'
+                    object-fit='cover'
                     src={image}
                     alt={name}
                 />

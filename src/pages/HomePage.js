@@ -1,4 +1,3 @@
-import Cover from "../app/assets/img/cover.jpg";
 import DescImg from "../app/assets/img/relax.jpg";
 import SubHeader from "../components/SubHeader";
 import CarouselPage from "../components/CarouselPage";
@@ -7,9 +6,6 @@ const HomePage = () => {
   return (
     <div>
       {/* <SubHeader current='Home'/> */}
-      {/* <div className="cover">
-        <img className="home-img" src={Cover} alt="cover" />
-      </div> */}
       <div className="cover">
         <CarouselPage className='carousel-section'/>
       </div>

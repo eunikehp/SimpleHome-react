@@ -13,7 +13,8 @@ const FavoriteItem = ({ item }) => {
         <Card color="light" outline>
             <CardImg
                 width='100%'
-                height='auto'
+                height='200px'
+                object-fit= 'cover'
                 src={image}
                 alt={name}
             />
