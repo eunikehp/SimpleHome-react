@@ -1,6 +1,6 @@
-import DiningTable from "../../app/assets/img/white-dining-table.jpg";
-import Sofa from "../../app/assets/img/gray-sofa.jpg";
-import Bed from "../../app/assets/img/gray-bed.jpg";
+import DiningTable from "../../app/assets/img/diningtable.jpg";
+import Sofa from "../../app/assets/img/sofa.jpg";
+import Bed from "../../app/assets/img/bed.jpg";
 
 const ShopByCategory = () => {
     return (

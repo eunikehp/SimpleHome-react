@@ -1,4 +1,4 @@
-import { Container, Row} from 'reactstrap';
+import { Row} from 'reactstrap';
 import SubHeader from '../components/SubHeader';
 import CartList from '../features/cart/CartList';
 

@@ -39,7 +39,7 @@ body {
 
 section,
 .cover {
-  margin-bottom: 96px;
+  margin-bottom: 80px;
 }
 
 .carousel-section {
@@ -50,19 +50,16 @@ section,
 h1,
 h2,
 h3,
-p {
+h4,
+h5,
+h6 {
   font-family: "Inter", sans-serif;
   color: #463f3a;
 }
 
 h1 {
-  font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
-}
-
-h2 {
-  font-size: 36px;
 }
 
 h3 {
@@ -86,7 +83,6 @@ h3 {
 .button:active {
   background-color: #463f3a;
 }
-
 
 
 
@@ -132,6 +128,10 @@ h3 {
   font-weight: bold;
   font-size: 18px;
 }
+
+
+
+
 
 /* BREADCRUMB */
 .breadcrumb {
@@ -186,6 +186,9 @@ h3 {
   opacity: 0;
   transition: 300ms ease-in;
 }
+
+
+
 
 /* HOME */
 .home-img {
@@ -242,6 +245,8 @@ h3 {
   line-height: 1.7;
 }
 
+
+
 /* CATEGORY */
 .category,
 .inspiration {
@@ -251,7 +256,7 @@ h3 {
 
 .category-title,
 .inspiration-title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .category-title h3 {
@@ -262,6 +267,7 @@ h3 {
   display: flex;
   gap: 50px;
   padding: 0;
+  margin:0
 }
 
 .category-block {
@@ -269,6 +275,12 @@ h3 {
   flex-direction: column;
   list-style: none;
   align-items: center;
+  cursor: pointer;
+}
+
+
+.category-block:hover{
+  font-weight: 600;
 }
 .category-item {
   width: 160px;
@@ -276,11 +288,21 @@ h3 {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
+  border: 3px solid #ffffff;
+}
+
+.category-item:hover {
+  border:none;
+}
+
+.category-block p{
+  margin-bottom: 0;
 }
 
 
-/* INSPIRATION */
 
+
+/* INSPIRATION */
 .inspiration-list {
   display: flex;
   justify-content: space-between;
@@ -292,25 +314,32 @@ h3 {
   display: flex;
   flex-direction: column;
   list-style: none;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  cursor: pointer;
 }
 
-.inspiration-block h5 {
+.inspiration-item {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.inspiration-text {
+  padding: 1rem 1rem;
+}
+.inspiration-block h6 {
   font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 5px;
+  letter-spacing: -0.8px;
+  margin-bottom: 7px;
 }
 
 .inspiration-block p{
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
+  letter-spacing: -0.5px;
+  color:#949494;
+  margin-bottom: 0;
 }
 
-.inspiration-item {
-  height: 30rem;
-  object-fit: cover;
-  margin-bottom: 15px;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
-}
 
 
 
