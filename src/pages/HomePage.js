@@ -6,9 +6,9 @@ import Inspiration from "../components/sections/Inspiration";
 const HomePage = () => {
   return (
     <div>
-      <div className="cover">
-        <CarouselPage className="carousel-section" />
-      </div>
+      <section>
+        <CarouselPage/>
+      </section>
 
       <div className="page-container">
         <HomeDescription />

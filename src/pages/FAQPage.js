@@ -24,7 +24,7 @@ const FAQPage = () => {
             <SubHeader current='FAQ' />
             <Row className='justify-content-center'>
                 <Col md='12'>
-                    <h3 className='text-center'>Frequently Asked Questions</h3>
+                    <h2 className='text-center heading-secondary'>Frequently Asked Questions</h2>
                 </Col>
                 <Col md='6'>
                     <Accordion flush open={open} toggle={toggle}>

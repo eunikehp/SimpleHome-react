@@ -1,12 +1,13 @@
 import DescImg from "../../app/assets/img/relax.jpg";
 
-
 const HomeDescription = () => {
   return (
     <>
-      <section className="home-description-box">
+      <section className="grid-col-2">
         <div className="home-description">
-          <h1>Transform Your Space, Elevate Your Life</h1>
+          <h1 className="heading-primary">
+            Transform Your Space, Elevate Your Life
+          </h1>
           <p className="home-text">
             At Simple Home, we believe that your home is more than just a
             place—it's a reflection of your style, your personality, and your
@@ -24,8 +25,8 @@ const HomeDescription = () => {
       </section>
 
       <section>
-        <h2>Why Choose Us?</h2>
-        <div class="grid-3-cols">
+        <h2 className="heading-secondary">Why Choose Us?</h2>
+        <div class="grid-col-3">
           <div>
             <svg
               className="features-icon"
@@ -42,9 +43,7 @@ const HomeDescription = () => {
               />
             </svg>
 
-            <p class="features-title">
-              <strong>Curated Selection</strong>
-            </p>
+            <p class="title">Curated Selection</p>
             <p class="features-text">
               Every item in our collection is handpicked by our team of design
               experts, ensuring that you have access to the latest trends and
@@ -67,9 +66,7 @@ const HomeDescription = () => {
                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
               />
             </svg>
-            <p class="features-title">
-              <strong>Sustainable Choices</strong>
-            </p>
+            <p class="title">Sustainable Choices</p>
             <p class="features-text">
               We prioritize eco-friendly materials and sustainable practices, so
               you can feel good about the products you bring into your home.
@@ -92,9 +89,7 @@ const HomeDescription = () => {
               />
             </svg>
 
-            <p class="features-title">
-              <strong>Customer Satisfaction</strong>
-            </p>
+            <p class="title">Customer Satisfaction</p>
             <p class="features-text">
               Your happiness is our priority. We offer easy returns, fast
               shipping, and a dedicated customer service team to help you every

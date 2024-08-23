@@ -6,7 +6,7 @@ const SubHeader = ({ current, detail }) => {
     return (
         <Row>
             <Col>
-                <Breadcrumb className='breadcrumb'>
+                <Breadcrumb className='breadcrumb-section'>
                     <BreadcrumbItem>
                         <Link to='/' style={{ textDecoration: 'none', color:'gray' }} >Home</Link>
                     </BreadcrumbItem>

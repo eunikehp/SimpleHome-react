@@ -8,7 +8,7 @@ const CartPage = () => {
     return (
         <div className='page-container'>
             <SubHeader current='Order' />
-            <h2>Shopping Cart</h2>
+            <h2 className='heading-secondary'>Shopping Cart</h2>
             <hr/>
             <Row>
                 <CartList />

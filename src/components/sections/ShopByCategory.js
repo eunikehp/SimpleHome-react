@@ -4,10 +4,10 @@ import Bed from "../../app/assets/img/bed.jpg";
 
 const ShopByCategory = () => {
     return (
-        <section className="category">
+        <section className="flex-column">
           <div className="category-title">
-            <h2>Shop by Category</h2>
-            <h3>Discover the Perfect Piece for Every Room</h3>
+            <h2 className="heading-secondary">Shop by Category</h2>
+            <h3 className="heading-tertiary">Discover the Perfect Piece for Every Room</h3>
           </div>
           <ul className="category-list">
             <li className="category-block">

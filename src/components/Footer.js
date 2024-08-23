@@ -6,20 +6,20 @@ const Footer = () => {
     <div className="footer">
       <div className="company-info">
         <div className="location">
-          <h5>Location</h5>
+          <span className='subheading'>Location</span>
           <p>
             Bronkhorststraat 30
             <br />
             2718 AT Den Haag, The Netherlands
           </p>
-          <h5>Opening Hours</h5>
+          <span className='subheading'>Opening Hours</span>
           <p>
             Monday - Saturday 10.00-18.00
             <br />
             Sunday 12.00-18.00
           </p>
         </div>
-        <ul className="footer-menu">
+        <ul className="footer-nav">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -35,7 +35,7 @@ const Footer = () => {
         </ul>
         <div className="contact">
           <div className="column">
-            <h5>Contact us:</h5>
+            <span className='subheading' >Contact us:</span>
             <div className="column-link">
               <a
                 role="button"
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="column">
-            <h5>Follow us:</h5>
+            <span className='subheading'>Follow us:</span>
             <div className="grid-col-4">
               <a href="http://instagram.com/" className="social">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />

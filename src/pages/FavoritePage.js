@@ -7,7 +7,7 @@ const FavoritePage = () => {
     return (
         <div className='page-container'>
             <SubHeader current='Favorites' />
-            <h2>Wish List</h2>
+            <h2 className='heading-secondary'>Wish List</h2>
             <hr/>
             <FavoritesList />
         </div>
