@@ -185,6 +185,10 @@ p {
   font-size: 1.8rem;
 }
 
+.card-button {
+  cursor:pointer;
+}
+
 /* BREADCRUMB */
 .breadcrumb-section {
   margin: 2rem auto;
@@ -420,6 +424,32 @@ p {
   font-size: 1.6rem;
 }
 
+
+/* CONTACT */
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text div a,
+input {
+  font-size: 1.6rem;
+}
+
+.comment-box {
+  border: 1px solid lightgray;
+  padding: 1.6rem;
+  width: 50rem;
+}
+
 /* FOOTER */
 .footer {
   background-color: #f4f3ee;
@@ -511,5 +541,22 @@ Instead, 1rem = 1em =16px */
     font-size: 56.25%
   }
 }
+
+/* BELOW 944px (tablets) */
+@media (max-width: 59em) {
+  html {
+    /* font-size: 8px;
+    8px/16px = 50% */
+
+    font-size: 50%
+  }
+
+  .desc-img {
+    height: 38em;
+    width: 38em;
+  }
+}
+
+
 
 

@@ -1,52 +1,55 @@
-import { Card, CardImg, CardTitle, CardSubtitle, CardBody, CardText, Col, Row } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { removeFavorite } from './FavoritesSlice';
-import { addItem } from '../cart/CartSlice';
-import { useDispatch } from 'react-redux';
+import {
+  Card,
+  CardImg,
+  CardTitle,
+  CardSubtitle,
+  CardBody,
+  CardText,
+  Col,
+  Row,
+} from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { removeFavorite } from "./FavoritesSlice";
+import { addItem } from "../cart/CartSlice";
+import { useDispatch } from "react-redux";
 
 const FavoriteItem = ({ item }) => {
-    const { id, image, name, price, category } = item;
+  const { id, image, name, price, category } = item;
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    return (
-        <Card color="light" outline>
-            <CardImg
-                width='100%'
-                height='200px'
-                object-fit= 'cover'
-                src={image}
-                alt={name}
-            />
-            <CardBody type='unstyled'>
-                <CardText style={{ fontSize: '13px', marginBottom: '0px', color: 'brown' }}>{category}</CardText>
-                <CardTitle style={{ color: 'black' }}>{name}</CardTitle>
-                <CardSubtitle
-                    className='mb-2 text-muted'
-                >€ {price}</CardSubtitle>
-                <Row>
-                    <Col>
-                        <div style={{ alignItems: 'end', cursor: 'pointer' }} onClick={() => dispatch(removeFavorite(id))}>
-                            <FontAwesomeIcon
-                                icon="fa-regular fa-trash-can"
-                                className="removeFavorite"
-                            /> Remove
-                        </div>
-                    </Col>
-                    <Col>
-                        <div style={{ alignItems: 'end', cursor: 'pointer' }} onClick={() => dispatch(addItem(item))}>
-                            <FontAwesomeIcon
-                                icon="fa-solid fa-cart-plus"
-                                className="addItem"
-                            /> Add to Cart
-                        </div>
-                    </Col>
-                </Row>
-            </CardBody>
-        </Card>
-    )
-}
-
+  return (
+    <div className="product-card">
+      <img
+        width="100%"
+        height="200px"
+        object-fit="cover"
+        src={image}
+        alt={name}
+      />
+      <div className="card-body">
+        <div className="card-category">{category}</div>
+        <div className="card-title">{name}</div>
+        <div className="price">€ {price}</div>
+        <div className="grid-col-2">
+          <div
+            className="card-button"
+            onClick={() => dispatch(removeFavorite(id))}
+          >
+            <FontAwesomeIcon
+              icon="fa-regular fa-trash-can"
+              className="removeFavorite"
+            />{" "}
+            Remove
+          </div>
+          <div className="card-button" onClick={() => dispatch(addItem(item))}>
+            <FontAwesomeIcon icon="fa-solid fa-cart-plus" className="addItem" />{" "}
+            Add to Cart
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default FavoriteItem;
-

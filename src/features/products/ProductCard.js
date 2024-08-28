@@ -9,7 +9,6 @@ const ProductCard = ({ product }) => {
         <div className="product-card">
           <img
             width="100%"
-            // height='auto'
             src={image}
             alt={name}
           />

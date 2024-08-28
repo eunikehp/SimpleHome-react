@@ -28,12 +28,12 @@ const ContactForm = () => {
             validate={validateContactForm}
         >
             <Form>
-                <Col>
+                <Col >
                     <FormGroup col>
                         <Label htmlFor='name' md='2'>
                             Name
                         </Label>
-                        <Col>
+                        <Col >
                             <Field
                                 className='form-control'
                                 name='name'
@@ -44,7 +44,7 @@ const ContactForm = () => {
                             </ErrorMessage>
                         </Col>
                     </FormGroup>
-                    <FormGroup col>
+                    <FormGroup col >
                         <Label htmlFor='email' md='2'>
                             Email
                         </Label>
