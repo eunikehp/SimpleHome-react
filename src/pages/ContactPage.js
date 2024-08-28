@@ -6,7 +6,7 @@ const ContactPage = () => {
 
 
     return (
-        <Container className='content'>
+        <div className='page-container'>
             <SubHeader current='Contact' />
             <Row className='text-center'>
                 <Col>
@@ -33,7 +33,7 @@ const ContactPage = () => {
                     <ContactForm />
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 };
 

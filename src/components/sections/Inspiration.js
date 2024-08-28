@@ -31,7 +31,7 @@ const Inspiration = () => {
           />
           <div className="inspiration-text">
             <span className="subheading">
-              DIY Projects to Personalize Your Space
+              DIY Projects
             </span>
             <p>
               Get hands-on with our easy and creative DIY projects. Whether

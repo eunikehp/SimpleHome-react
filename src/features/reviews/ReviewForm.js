@@ -30,7 +30,7 @@ const ReviewForm = ({ productId }) => {
 
     return (
         <>
-            <Button outline onClick={() => setCanvasOpen(true)}>
+            <Button outline onClick={() => setCanvasOpen(true)} className="font-16">
                 Write a review
             </Button>
             <Offcanvas isOpen={canvasOpen} direction='end' style={{ padding: '12px 15px' }}>

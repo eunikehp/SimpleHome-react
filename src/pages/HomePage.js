@@ -1,5 +1,6 @@
 import CarouselPage from "../components/sections/CarouselPage";
-import HomeDescription from "../components/sections/HomeDescription";
+import Hero from "../components/sections/Hero";
+import WhyChooseUs from "../components/sections/WhyChooseUse";
 import ShopByCategory from "../components/sections/ShopByCategory";
 import Inspiration from "../components/sections/Inspiration";
 
@@ -7,11 +8,12 @@ const HomePage = () => {
   return (
     <div>
       <section>
-        <CarouselPage/>
+        <CarouselPage className='carousel-section'/>
       </section>
-
+      
       <div className="page-container">
-        <HomeDescription />
+        <Hero />
+        <WhyChooseUs />
         <ShopByCategory />
         <Inspiration />
       </div>

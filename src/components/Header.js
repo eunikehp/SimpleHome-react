@@ -37,15 +37,20 @@ const Header = () => {
   }
 
   return (
-    <Navbar light sticky='top' className='px-4' >
+    <Navbar light sticky='top'>
+
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+
       <NavbarBrand href='/'>
         <img src={SimpleHomeLogo} alt='simplehome logo' />
       </NavbarBrand>
+
+      
       <Offcanvas isOpen={menuOpen} navbar>
         <OffcanvasHeader className='mx-4' toggle={() => setMenuOpen(false)}>
           <img style={{ width: '40%' }} src={SimpleHomeLogo} alt='simplehome logo' />
         </OffcanvasHeader>
+
         <Nav className='m-5 fs-4' navbar>
           <NavItem>
             <NavLink
@@ -55,6 +60,7 @@ const Header = () => {
               onClick={() => setMenuOpen(false)}
             >Home</NavLink>
           </NavItem>
+
           <NavItem>
             <NavLink
               className='nav-link'
@@ -63,6 +69,7 @@ const Header = () => {
               onClick={() => setMenuOpen(false)}
             >Shop</NavLink>
           </NavItem>
+
           <NavItem>
             <NavLink
               className='nav-link'
@@ -71,6 +78,7 @@ const Header = () => {
               onClick={() => setMenuOpen(false)}
             >Contact</NavLink>
           </NavItem>
+
           <NavItem>
             <NavLink
               className='nav-link'
@@ -87,6 +95,7 @@ const Header = () => {
         <NavItem>
           <UserForm />
         </NavItem>
+
         <NavItem>
           <NavLink
             to='/favorites'
@@ -102,6 +111,7 @@ const Header = () => {
             </Badge>
           </NavLink>
         </NavItem>
+
         <NavItem>
           <NavLink
             to='/cart'

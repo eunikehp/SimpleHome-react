@@ -1,31 +1,31 @@
-import Cover1 from '../../app/assets/img/cover.jpg';
-import Cover2 from '../../app/assets/img/cover2.jpg';
-import Cover3 from '../../app/assets/img/cover3.jpg';
-import React, { useState } from 'react';
+import Cover1 from "../../app/assets/img/cover.jpg";
+import Cover2 from "../../app/assets/img/cover2.jpg";
+import Cover3 from "../../app/assets/img/cover3.jpg";
+import React, { useState } from "react";
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
-} from 'reactstrap';
+} from "reactstrap";
 
 const items = [
   {
     src: Cover1,
-    altText: 'Slide 1',
+    altText: "Slide 1",
     // caption: 'Slide 1',
     key: 1,
   },
   {
     src: Cover2,
-    altText: 'Slide 2',
+    altText: "Slide 2",
     // caption: 'Slide 2',
     key: 2,
   },
   {
     src: Cover3,
-    altText: 'Slide 3',
+    altText: "Slide 3",
     // caption: 'Slide 3',
     key: 3,
   },
@@ -59,7 +59,11 @@ function CarouselPage(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} style={{height: '600px', width: '100%', objectFit:'cover'}}/>
+        <img
+          src={item.src}
+          alt={item.altText}
+          style={{ height: "600px", width: "100%", objectFit: "cover" }}
+        />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
@@ -69,29 +73,31 @@ function CarouselPage(args) {
   });
 
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
-      <CarouselIndicators
-        items={items}
+    <section>
+      <Carousel
         activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+        next={next}
+        previous={previous}
+        {...args}
+      >
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </section>
   );
 }
 
