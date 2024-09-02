@@ -49,7 +49,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div>
+        <div className="satisfaction">
           <svg
             className="features-icon"
             xmlns="http://www.w3.org/2000/svg"
