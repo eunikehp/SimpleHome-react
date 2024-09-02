@@ -6,18 +6,22 @@ const Footer = () => {
     <div className="footer">
       <div className="company-info">
         <div className="location">
-          <span className='subheading'>Location</span>
-          <p>
-            Bronkhorststraat 30
-            <br />
-            2718 AT Den Haag, The Netherlands
-          </p>
-          <span className='subheading'>Opening Hours</span>
-          <p>
-            Monday - Saturday 10.00-18.00
-            <br />
-            Sunday 12.00-18.00
-          </p>
+          <div>
+            <span className="subheading">Location</span>
+            <p>
+              Bronkhorststraat 30
+              <br />
+              2718 AT Den Haag, The Netherlands
+            </p>
+          </div>
+          <div>
+            <span className="subheading">Opening Hours</span>
+            <p>
+              Monday - Saturday 10.00-18.00
+              <br />
+              Sunday 12.00-18.00
+            </p>
+          </div>
         </div>
         <ul className="footer-nav">
           <li>
@@ -35,7 +39,7 @@ const Footer = () => {
         </ul>
         <div className="contact">
           <div className="column">
-            <span className='subheading' >Contact us:</span>
+            <p className="subheading">Contact us:</p>
             <div className="column-link">
               <a
                 role="button"
@@ -54,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="column">
-            <span className='subheading'>Follow us:</span>
+            <span className="subheading">Follow us:</span>
             <div className="grid-col-4">
               <a href="http://instagram.com/" className="social">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />

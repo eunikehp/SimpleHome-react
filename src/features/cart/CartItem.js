@@ -1,4 +1,4 @@
-import { Button, Row, Col } from "reactstrap";
+import { Button} from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { removeItem, decrementQuantity, incrementQuantity } from "./CartSlice";
 import { useDispatch } from "react-redux";
@@ -25,9 +25,9 @@ const CartItem = ({ item }) => {
         <p className="card-category">{category}</p>
         <p className="card-title">{name}</p>
       </div>
-      <div className="flex-row" style={{fontSize:'1.4rem'}}>
+      <div className="flex-row" style={{fontSize:'1.6rem'}}>
         <Button
-          pill
+          // pill
           onClick={() => dispatch(decrementQuantity(id))}
           className="cart-button"
         >
@@ -37,18 +37,18 @@ const CartItem = ({ item }) => {
           {quantity} {quantity > 1 ? "items " : "item "}
         </div>
         <Button
-          pill
+          // pill
           onClick={() => dispatch(incrementQuantity(id))}
           className="cart-button"
         >
           +
         </Button>
       </div>
-      <Col style={{ fontSize: "1.4rem" }}>
+      <div style={{ fontSize: "1.6rem" }}>
         <p
           md="2"
-          className="mb-5 text-muted"
-          style={{ textAlign: "end", fontSize: "1.6rem" }}
+          className="mb-5"
+          style={{ textAlign: "end"}}
         >
           € {price}
         </p>
@@ -62,7 +62,7 @@ const CartItem = ({ item }) => {
           />{" "}
           Remove
         </div>
-        <Row>
+        <div>
           {replaceButton ? (
             <div
               style={{ alignItems: "end", cursor: "pointer" }}
@@ -82,8 +82,8 @@ const CartItem = ({ item }) => {
               />
             </div>
           )}
-        </Row>
-      </Col>
+        </div>
+      </div>
     </div>
   );
 };

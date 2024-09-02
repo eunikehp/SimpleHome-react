@@ -9,25 +9,26 @@ const CartList = () => {
     const cart = useSelector(selectAllCart);
     console.log('cart: ', cart);
 
+    // eslint-disable-next-line no-lone-blocks
     {return (cart && cart.length > 0) ?
-        <>
-        <Col md='8' >
+        <div className="cart-box">
+        <div>
             {cart.map((item) => {
                 return (
-                    <Col className="m-1" key={item.id}>
+                    <div key={item.id}>
                         <CardItem item={item} />
-                    </Col>
+                    </div>
                 );
             })}
-        </Col>
-        <Col md='4'>
+        </div>
+        <div>
             <OrderSummary />
-        </Col>
-        </>
+        </div>
+        </div>
     :
-    <Col md='6' className='m-1'>
+    <p>
         There are no item selected yet.
-    </Col>
+    </p>
     }
 }
 

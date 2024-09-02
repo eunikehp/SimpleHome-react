@@ -30,11 +30,11 @@ const ReviewForm = ({ productId }) => {
 
     return (
         <>
-            <Button outline onClick={() => setCanvasOpen(true)} className="font-16">
+            <div className="sml-btn" onClick={() => setCanvasOpen(true)} >
                 Write a review
-            </Button>
-            <Offcanvas isOpen={canvasOpen} direction='end' style={{ padding: '12px 15px' }}>
-                <OffcanvasHeader className='my-3' toggle={() => setCanvasOpen(false)}>Please write a review</OffcanvasHeader>
+            </div>
+            <Offcanvas isOpen={canvasOpen} direction='end'>
+                <OffcanvasHeader toggle={() => setCanvasOpen(false)}>Please write a review</OffcanvasHeader>
                 <Formik
                     initialValues={{
                         rating: undefined,
@@ -87,11 +87,11 @@ const ReviewForm = ({ productId }) => {
                                 as='textarea'
                                 rows='3'
                             />
-                            <div style={{ fontSize: '12px' }}>Write something that you think summarizes the experience in one sentence, and would be helpful to others.</div>
+                            <div>Write something that you think summarizes the experience in one sentence, and would be helpful to others.</div>
                         </FormGroup>
-                        <Button type='submit'>
+                        <div type='submit' className='sml-btn'>
                             Submit review
-                        </Button>
+                        </div>
                     </Form>
                 </Formik>
             </Offcanvas>

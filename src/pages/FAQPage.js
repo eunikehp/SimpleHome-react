@@ -1,4 +1,3 @@
-import { Container, Row, Col } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
 import { useState } from 'react';
 import {
@@ -22,11 +21,11 @@ const FAQPage = () => {
     return (
         <div className='page-container'>
             <SubHeader current='FAQ' />
-            <Row className='justify-content-center'>
-                <Col md='12'>
-                    <h2 className='text-center heading-secondary'>Frequently Asked Questions</h2>
-                </Col>
-                <Col md='6'>
+            <div>
+                <div className='column-center'>
+                    <h2 className='heading-secondary'>Frequently Asked Questions</h2>
+                </div>
+                <div className='column-center'>
                     <Accordion flush open={open} toggle={toggle}>
                         <AccordionItem>
                             <AccordionHeader targetId="1">General</AccordionHeader>
@@ -60,8 +59,8 @@ const FAQPage = () => {
                             </AccordionBody>
                         </AccordionItem>
                     </Accordion>
-                </Col>
-            </Row>
+                </div>
+            </div>
         </div>
     );
 };

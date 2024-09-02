@@ -1,4 +1,3 @@
-import { Row, Col } from "reactstrap";
 import { useSelector } from "react-redux";
 import { selectAllFavorites } from "./FavoritesSlice";
 import FavoriteItem from "./FavoriteItem";
@@ -7,19 +6,19 @@ const FavoritesList = () => {
   const favorites = useSelector(selectAllFavorites);
 
   return favorites && favorites.length > 0 ? (
-    <Row className="ms-auto">
+    <div className="product-list">
       {favorites.map((item) => {
         return (
-          <Col md="3" className="m-1" key={item.id}>
+          <div key={item.id}>
             <FavoriteItem item={item} />
-          </Col>
+          </div>
         );
       })}
-    </Row>
+    </div>
   ) : (
-    <Col md="6" className="m-1">
+    <p>
       There are no item selected yet.
-    </Col>
+    </p>
   );
 };
 

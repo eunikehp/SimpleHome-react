@@ -68,37 +68,45 @@ const OrderSummary = () => {
         Check Out
       </div>
 
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Your Order</ModalHeader>
+      <Modal isOpen={modal} toggle={toggle} className="check-out">
+        <ModalHeader toggle={toggle}><h4 className="title">Your Order</h4></ModalHeader>
         <ModalBody>
-          <Row className="mb-5">
-            <div>
-              Total ({getTotal().totalQuantity}{" "}
-              {getTotal().totalQuantity > 1 ? "items" : "item"})
-            </div>
-            <Col md="9">
-              <div>Subtotal </div>
-            </Col>
-            <Col md="3">
-              <div>€ {getTotal().subTotal}</div>
-            </Col>
-          </Row>
-          <Row>
-            <Col md="9">Postage cost</Col>
-            <Col md="3">€ {getTotal().postageCost}</Col>
-          </Row>
-          <hr />
-          <Row className="mb-3">
-            <Col md="9">Total amount</Col>
-            <Col md="3">€ {getTotal().totalAmount}</Col>
-          </Row>
+          <table width="100%">
+            <tr>
+              <td><p>
+                Total ({getTotal().totalQuantity}{" "}
+                {getTotal().totalQuantity > 1 ? "items" : "item"})</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>Subtotal</p></td>
+              <td><p>€ {getTotal().subTotal}</p></td>
+            </tr>
+            <tr>
+              <td><p>Postage cost</p></td>
+              <td><p>€ {getTotal().postageCost}</p></td>
+            </tr>
+            <tr>
+              <td>
+                <hr />
+              </td>
+              <td>
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td><p>Total amount</p></td>
+              <td><p>€ {getTotal().totalAmount}</p></td>
+            </tr>
+          </table>
         </ModalBody>
+
         <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Pay Now
-          </Button>{" "}
-          <Button color="secondary" onClick={toggle}>
-            Cancel
+          <Button className="modal-button" onClick={toggle}>
+            <p>Pay Now</p>
+          </Button>
+          <Button className="modal-button" onClick={toggle}>
+            <p>Cancel</p>
           </Button>
         </ModalFooter>
       </Modal>
