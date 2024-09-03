@@ -23,7 +23,7 @@ const FAQPage = () => {
             <SubHeader current='FAQ' />
             <div>
                 <div className='column-center'>
-                    <h2 className='heading-secondary'>Frequently Asked Questions</h2>
+                    <h3 className='heading-tertiary'>Frequently Asked Questions</h3>
                 </div>
                 <div className='column-center'>
                     <Accordion flush open={open} toggle={toggle} className='faq-accordion'>
