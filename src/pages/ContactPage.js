@@ -11,7 +11,7 @@ const ContactPage = () => {
       </div>
       <div className="column-center">
         <div className="contact-text">
-          <div>
+          <div className="contact-link">
             <a
               role="button"
               className="btn btn-link btn-sm"

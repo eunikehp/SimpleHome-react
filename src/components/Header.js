@@ -106,7 +106,7 @@ const Header = () => {
             />
             <Badge 
               color="danger"
-              style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'1rem', borderRadius: '50%'}}>
+              style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'0.875rem', borderRadius: '50%'}}>
                 {getTotalFav() || 0 }
             </Badge>
           </NavLink>
@@ -122,7 +122,7 @@ const Header = () => {
                />
             <Badge 
               color="danger"
-              style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'1rem', borderRadius: '50%'}}>
+              style={{position:'absolute', left: '60%', bottom: '60%', fontSize:'0.875rem', borderRadius: '50%'}}>
                 {getTotalQuantity() || 0 }
             </Badge>
           </NavLink>
