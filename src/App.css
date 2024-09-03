@@ -390,10 +390,20 @@ p {
 }
 
 /* PRODUCT DETAILS */
+.product-box {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  column-gap: 6rem;
+}
+
+.product-image img {
+  height: 40rem;
+}
+
 .product-details {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
 }
 
 .product-category {
@@ -556,8 +566,8 @@ input {
 }
 
 /* ACCORDION */
-.accordion {
-  width: 70rem;
+.faq-accordion {
+  width: 100%;
 }
 
 .accordion-header button {
@@ -688,7 +698,8 @@ Instead, 1rem = 1em =16px */
     font-size: 43.75%;
   }
 
-  .grid-col-2 {
+  .grid-col-2,
+  .product-box  {
     gap: 2rem;
     grid-template-columns: 1fr;
   }
@@ -699,8 +710,8 @@ Instead, 1rem = 1em =16px */
   }
 
   .product-image img {
-    height: 50rem ;
-    width: auto;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -722,7 +733,8 @@ Instead, 1rem = 1em =16px */
 /* BELOW 544px (PHONES) */
 @media (max-width: 34em) {
   .grid-col-2,
-  .grid-col-3 {
+  .grid-col-3,
+  .product-box  {
     grid-template-columns: 1fr;
     gap: 0.5em;
   }
@@ -761,9 +773,15 @@ Instead, 1rem = 1em =16px */
     margin-bottom: 2rem;
   }
 
+  .heading-secondary,
+  .subheading {
+    margin: 0.5rem 0;
+  }
+
   .company-info {
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 0
   }
   .column,
   .column-link,
@@ -798,6 +816,14 @@ Instead, 1rem = 1em =16px */
     width: auto;
     object-fit: cover;
   }
+
+  .cart-detail {
+    column-gap: 0.5rem;
+  }
+
+  .footer{
+    padding: 2rem;
+  }
 }
 
 /* BELOW 375px (PHONES) */
@@ -811,13 +837,15 @@ Instead, 1rem = 1em =16px */
   .carousel-item {
     max-height: 30rem;
   }
-}
 
-/* BELOW 320px (SMALL PHONES) */
-@media (max-width: 20em) {
-  html {
-    /* font-size: 4px;
-    4px/16px = 25% */
-    font-size: 25%;
+  .features-icon {
+    margin: 1rem 0;
   }
+
+  
+
+
+
+
+  
 }

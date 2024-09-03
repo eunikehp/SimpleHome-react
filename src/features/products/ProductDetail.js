@@ -61,7 +61,7 @@ const ProductDetail = ({ product }) => {
   // }
 
   return (
-    <div className="grid-col-2">
+    <div className="product-box">
       <div className="product-image">
         <img src={image} alt={name} style={{ width: "100%" }} />
       </div>

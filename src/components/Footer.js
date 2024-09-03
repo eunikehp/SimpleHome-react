@@ -39,7 +39,7 @@ const Footer = () => {
         </ul>
         <div className="contact">
           <div className="column">
-            <p className="subheading">Contact us:</p>
+            <span className="subheading">Contact us:</span>
             <div className="column-link">
               <a
                 role="button"

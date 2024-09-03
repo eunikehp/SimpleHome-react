@@ -21,6 +21,7 @@ This website is an evolution of a previous JavaScript project, now converted int
 - **React**: JavaScript library used for building user interfaces and managing state.
 - **Redux**: State management library used with React for managing complex application state.
 
+
 <!-- ### Backend
 
 - **Node.js**: JavaScript runtime used for building scalable server-side applications.
@@ -35,7 +36,8 @@ This website is an evolution of a previous JavaScript project, now converted int
 - **VS Code**: Source code editor used for writing, editing, and debugging code.
 - **npm**: Package manager for Node.js used for installing and managing project dependencies.
 - **Webpack**: Module bundler used for bundling JavaScript files for the browser.
-<!-- - **Babel**: JavaScript compiler used for transpiling modern JavaScript code to a backwards-compatible version for older browsers. -->
+
+
 
 ### Dependencies
 
@@ -50,6 +52,11 @@ This website is an evolution of a previous JavaScript project, now converted int
 7. [Redux-thunk](https://redux.js.org/usage/writing-logic-thunks): Redux middleware allows asynchronous logic to be dispatched as actions in Redux.
 8. [Typeface-open-sans](https://www.npmjs.com/package/typeface-open-sans): A package that provides the Open Sans font family for use in web development projects.
 9. [Typeface-roboto](https://www.npmjs.com/package/typeface-roboto): A package that provides the Roboto font family for use in web development projects.
+
+### Deployment 
+
+-**Google Cloud**: Uploading the build file directly to Google Cloud console
+-**Firebase Hosting**: Web hosting provider
 
 ## Features
 
