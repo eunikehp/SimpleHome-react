@@ -21,6 +21,9 @@ This website is an evolution of a previous JavaScript project, now converted int
 - **React**: JavaScript library used for building user interfaces and managing state.
 - **Redux**: State management library used with React for managing complex application state.
 
+### Database
+
+- **Firestore**: a NoSQL document database that lets us easily store, sync, and query data for mobile and web apps.
 
 <!-- ### Backend
 
@@ -36,7 +39,6 @@ This website is an evolution of a previous JavaScript project, now converted int
 - **VS Code**: Source code editor used for writing, editing, and debugging code.
 - **npm**: Package manager for Node.js used for installing and managing project dependencies.
 - **Webpack**: Module bundler used for bundling JavaScript files for the browser.
-
 
 
 ### Dependencies

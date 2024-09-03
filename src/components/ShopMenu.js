@@ -1,29 +1,28 @@
-import { Row, Nav, NavItem,NavLink } from 'reactstrap';
-
+import { useNavigate } from "react-router-dom";
+import { setCategory } from "../features/products/productsSlice";
+import { useDispatch } from "react-redux";
 
 const ShopMenu = () => {
-    return (
-        <Row>
-            <Nav justified>
-                <NavItem>
-                    <NavLink
-                        href="#">
-                        Dining Table
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">
-                        Sofa
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#" >
-                        Bed
-                    </NavLink>
-                </NavItem>
-            </Nav>
-        </Row>
-    )
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const categories = ["All", "Bed", "Dining Table", "Sofa"];
+
+  const handleCategoryClick = (category) => {
+    dispatch(setCategory(category));
+    navigate(`/shop/${category === "All" ? "" : category}`); //Navigate to ShopPage with the selected category
+  };
+
+  return (
+    <div >
+      <ul className="shop-menu">
+        {categories.map((category) => (
+          <li key={category}>
+            <div className="shop-menu-button" onClick={() => handleCategoryClick(category)}>{category}</div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default ShopMenu;

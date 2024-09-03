@@ -9,8 +9,7 @@ import Loading from '../components/Loading';
 
 const ProductDetailPage = () => {
     const { productId } = useParams(); //useParams() will always parse URL parameters as strings. 
-    const selectedProduct = useSelector(selectProductById(productId));
-    console.log('selectedProduct: ', selectedProduct);
+    const selectedProduct = useSelector((state) => selectProductById(state, Number(productId)));
 
     //error and loading
     const isLoading = useSelector((state) => state.products.isLoading);
